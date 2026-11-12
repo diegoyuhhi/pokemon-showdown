@@ -6,8 +6,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	adaptability: {
 		name: "Adattabilità",
 		// Official flavor text: "Potenzia di molto le mosse dello stesso tipo del Pokémon."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Le mosse di questo Pokémon che corrispondono a uno dei suoi tipi ottengono un bonus di tipo (STAB) di 2 al posto di 1,5.", // NEEDS CHECK
+		shortDesc: "Il bonus di tipo (STAB) di questo Pokémon è 2 al posto di 1,5.", // NEEDS CHECK
 	},
 	aerilate: {
 		name: "Pellecielo",
