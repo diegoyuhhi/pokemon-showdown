@@ -1,7 +1,7 @@
 export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	noability: {
 		name: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		shortDesc: null, // NEEDS TRANSLATION test
 	},
 	adaptability: {
 		name: "Adattabilità",
