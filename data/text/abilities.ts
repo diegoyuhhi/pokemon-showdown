@@ -6,7 +6,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	adaptability: {
 		name: "Adaptability",
 		desc: "This Pokemon's moves that match one of its types have a same-type attack bonus (STAB) of 2 instead of 1.5.",
-		shortDesc: "This Pokemon's same-type attack bonus (STAB) is 2 instead of 1.5.",
+		shortDesc: "This Pokemon's same-type attack bonus (STAB) is 2 instead of 1.5.", 
 	},
 	aerilate: {
 		name: "Aerilate",
