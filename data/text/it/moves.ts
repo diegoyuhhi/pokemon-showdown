@@ -20,7 +20,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "L'utilizzatore recupera 1/2 dei PS sottratti al bersaglio, arrotondati per difetto. Se il bersaglio ha Sostituto attivo, la mossa fallisce.", 
 		},
 		gen1: {
-			desc: "L'utilizzatore recupera 1/2 di PS sottratti al bersaglio, arrotondati per difetto. Se questa mossa rompe il Sostituto del bersaglio, l'utilizzatore non recupera PS.", 
+			desc: "L'utilizzatore recupera 1/2 dei PS sottratti al bersaglio, arrotondati per difetto. Se questa mossa rompe il Sostituto del bersaglio, l'utilizzatore non recupera PS.", 
 		},
 	},
 	accelerock: {
@@ -33,17 +33,17 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Acido",
 		// Official flavor text: "Colpisce i nemici intorno spruzzando un acido corrosivo. Può anche ridurne la Difesa Speciale."
 		desc: "Possibilità del 10% di ridurre la Difesa Speciale del bersaglio di 1 stadio.", 
-		shortDesc: "10% di ridudde la DSp. Colpisce nemici adiacenti.", 
+		shortDesc: "10% di ridurre la DSp. Colpisce nemici adiacenti.", 
 		gen3: {
 			desc: "Possibilità del 10% di ridurre la Difesa del bersaglio di 1 stadio.", 
-			shortDesc: "10% di ridudde la Dif. Colpisce nemici adiacenti.", 
+			shortDesc: "10% di ridurre la Dif. Colpisce nemici adiacenti.", 
 		},
 		gen1: {
 			desc: "Possibilità del 33% di ridurre la Difesa del bersaglio di 1 stadio.", 
-			shortDesc: "33% di ridurre la Dif dell'avversario.", 
+			shortDesc: "33% di ridurre la Dif del bersaglio di 1 stadio.",  // NEEDS CHECK
 		},
 		gen2: {
-			shortDesc: "10% di ridurre la Dif dell'avversario.", 
+			shortDesc: "10% di ridurre la Dif del bersaglio di 1 stadio.",  // NEEDS CHECK
 		},
 	},
 	acidarmor: {
@@ -59,8 +59,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	acidspray: {
 		name: "Acidobomba",
 		// Official flavor text: "Chi la usa attacca il bersaglio con un acido altamente corrosivo. Il fluido riduce di molto la Difesa Speciale del bersaglio."
-		desc: "Possibilità del 100% di ridurre la Difesa Speciale dell'avversario di 2 stadi.",
-		shortDesc: "Riduce la DSp dell'avversario di 2 stadi.",
+		desc: "Possibilità del 100% di ridurre la Difesa Speciale del bersaglio di 2 stadi.", // NEEDS CHECK
+		shortDesc: "Riduce la DSp del bersaglio di 2 stadi.", // NEEDS CHECK
 	},
 	acrobatics: {
 		name: "Acrobazia",
@@ -103,14 +103,14 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	aircutter: {
 		name: "Aerasoio",
 		// Official flavor text: "Chi la usa provoca un vento tagliente che sferza i nemici intorno. Probabile brutto colpo."
-		desc: "Maggiori probabilità di infliggere un brutto colpo.",
+		desc: "Probabile brutto colpo.",
 		shortDesc: "Probabile brutto colpo. Colpisce nemici adiacenti.",
 	},
 	airslash: {
 		name: "Eterelama",
 		// Official flavor text: "Chi la usa attacca con un vento tagliente che squarcia il cielo. Può anche far tentennare il Pokémon colpito."
-		desc: "Possibilità del 30% di far tentennare l'avversario.",
-		shortDesc: "30% di far tentennare l'avversario.",
+		desc: "Possibilità del 30% di far tentennare il bersaglio.", // NEEDS CHECK
+		shortDesc: "30% di far tentennare il bersaglio.", // NEEDS CHECK
 	},
 	alloutpummeling: {
 		name: "Iperscarica Furiosa",
@@ -118,8 +118,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	alluringvoice: {
 		name: "Ammaliavoce",
-		desc: "Possibilità del 100% di confondere l'avverario se ha ricevuto un aumento di statistiche durante questo turno.",
-		shortDesc: "Confonde un avversario che si è appena potenziato.",
+		desc: "Possibilità del 100% di confondere i bersagli se hanno ricevuto un aumento di statistiche durante questo turno.", // NEEDS CHECK
+		shortDesc: "Confonde i bersagli che si sono appena potenziati.", // NEEDS CHECK
 	},
 	allyswitch: {
 		name: "Cambiaposto",
@@ -138,44 +138,44 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	amnesia: {
 		name: "Amnesia",
 		// Official flavor text: "Chi la usa svuota per un po’ la mente per dimenticare i problemi. La Difesa Speciale aumenta di molto."
-		desc: "Aumenta la Difesa Speciale dell'utilizzatore di 2 stadi.", 
-		shortDesc: "Aumenta la DSp dell'utilizzatore di 2 stadi.", 
+		desc: "Aumenta la Difesa Speciale dell'utilizzatore di 2 stadi.",
+		shortDesc: "Aumenta la DSp dell'utilizzatore di 2 stadi.",
 		gen1: {
-			desc: "Aumenta gli Speciali dell'utilizzatore di 2 stadi.", 
-			shortDesc: "Aumenta gli Spe dell'utilizzatore di 2 stadi.", 
+			desc: "Aumenta gli Speciali dell'utilizzatore di 2 stadi.",
+			shortDesc: "Aumenta gli Spe dell'utilizzatore di 2 stadi.",
 		},
 	},
 	anchorshot: {
 		name: "Colpo d’Ancora",
 		// Official flavor text: "Chi la usa attacca il nemico con un’ancora e lo intrappola nella catena impedendogli di fuggire."
-		desc: "Impedisce al bersaglio di essere ritirato. Il bersaglio può comunque essere ritirato se tiene un Disfoguscio o usa Staffetta, Virata, Monito, Teletrasporto, Retromarcia o Invertivolt. L'effetto termina se l'utilizzatore o il bersaglio lascia il campo.", 
-		shortDesc: "Impedisce al bersaglio di essere ritirato.",
+		desc: "Impedisce al bersaglio di essere ritirato. Il bersaglio può comunque essere ritirato se tiene un Disfoguscio o usa Invertivolt, Monito, Retromarcia, Staffetta, Teletrasporto o Virata. L'effetto termina se l'utilizzatore o il bersaglio lascia il campo.", 
+		shortDesc: "Impedisce al bersaglio di essere ritirato.", // NEEDS CHECK
 		gen7: {
-			desc: "Impedisce al bersaglio di essere ritirato. Il bersaglio può comunque essere ritirato se tiene un Disfoguscio o usa Staffetta, Monito, Retromarcia o Invertivolt. Se il bersaglio lascia il campo grazie a Staffetta, chi lo sostituisce rimarrà intrappolato. L'effeto termina se l'utilizzatore lascia il campo.",
+			desc: "Impedisce al bersaglio di essere ritirato. Il bersaglio può comunque essere ritirato se tiene un Disfoguscio o usa Invertivolt, Monito, Retromarcia o Staffetta. Se il bersaglio lascia il campo grazie a Staffetta, chi lo sostituisce rimarrà intrappolato. L'effetto termina se l'utilizzatore lascia il campo.", // NEEDS CHECK
 		},
 	},
 	ancientpower: {
 		name: "Forzantica",
 		// Official flavor text: "Colpisce il bersaglio con una forza primordiale. Può aumentare tutte le statistiche."
-		desc: "Possibilità del 10% di aumentare Attacco, Difesa, Attacco Speciale, Difesa Speciale e Velocità dell'utilizzatore di 1 stadio.", 
-		shortDesc: "10% di aumentare tutte le statistiche.", 
+		desc: "Possibilità del 10% di aumentare Attacco, Difesa, Attacco Speciale, Difesa Speciale e Velocità dell'utilizzatore di 1 stadio.",
+		shortDesc: "10% di aumentare tutte le statistiche.",
 	},
 	appleacid: {
 		name: "Acido Malico",
 		// Official flavor text: "Chi la usa attacca il bersaglio con un liquido acido ricavato da mele aspre riducendone la Difesa Speciale."
-		desc: "Possibilità del 100% di ridurre la Difesa Speciale dell'avversario di 1 stadio.",
-		shortDesc: "Riduce la DSp dell'avversario di 1 stadio.",
+		desc: "Possibilità del 100% di ridurre la Difesa Speciale del bersaglio di 1 stadio.", // NEEDS CHECK
+		shortDesc: "Riduce la DSp del bersaglio di 1 stadio.", // NEEDS CHECK
 	},
 	aquacutter: {
 		name: "Idrotaglio",
 		desc: "Maggiori probabilità di infliggere un brutto colpo.",
-		shortDesc: "Probabile brutto colpo", 
+		shortDesc: "Probabile brutto colpo",
 	},
 	aquajet: {
 		name: "Acquagetto",
 		// Official flavor text: "Chi la usa colpisce a una tale velocità da rendersi quasi invisibile. Questa mossa ha priorità alta."
 		desc: "Nessun effetto aggiuntivo.",
-		shortDesc: "Alta priorità.",
+		shortDesc: "Alta priorità.", 
 	},
 	aquaring: {
 		name: "Acquanello",
@@ -198,7 +198,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	armorcannon: {
 		name: "Corazza Cannone",
 		desc: "Riduce la Difesa e la Difesa Speciale dell'utilizzatore di 1 stadio.",
-		shortDesc: "Riduce Def e DSp dell'utilizzatore di 1 stadio.",
+		shortDesc: "Riduce Dif e DSp dell'utilizzatore di 1 stadio.", // NEEDS CHECK
 	},
 	armthrust: {
 		name: "Sberletese",
@@ -206,7 +206,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Colpisce da due a cinque volte. Ha il 35% di possibilità di colpire due o tre volte e il 15% di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi. Se l'utilizzatore ha l'abilità Abillegame, questa mossa colpisce sempre cinque volte. Se l'utilizzatore tiene un Dado truccato, questa mossa colpisce 4-5 volte.",
 		shortDesc: "Colpisce 2-5 volte in un turno.",
 		gen8: {
-			desc: "Colpisce da due a cinque volte. Ha il 35% di possibilità di colpire due o tre volte e il 15% di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi. Se l'utilizzatore ha l'abilità Abillegame, questa mossa colpisce sempre cinque volte.", 
+			desc: "Colpisce da due a cinque volte. Ha il 35% di possibilità di colpire due o tre volte e il 15% di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi. Se l'utilizzatore ha l'abilità Abillegame, questa mossa colpisce sempre cinque volte.",
 		},
 		gen4: {
 			desc: "Colpisce da due a cinque volte. Ha una possibilità di 3/8 di colpire due o tre volte e una di 1/8 di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi. Se l'utilizzatore ha l'abilità Abillegame, questa mossa colpisce sempre cinque volte. Se il bersaglio tiene un Focalnastro e ha tutti i PS quando questa mossa viene usata, non verrà mandato KO a prescindere dal numero di colpi.",
@@ -218,7 +218,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	aromatherapy: {
 		name: "Aromaterapia",
 		// Official flavor text: "Chi la usa rilascia un dolce profumo che cura tutti i problemi di stato propri e degli alleati."
-		desc: "Tutti i Pokémon nella squadra dell'utilizzatore vengono curati dei loro problemi di stato non volatili. I Pokémon in campo con l'abilità Mangiaerba non vengono curati, a meno che non siano l'utilizzatore.", 
+		desc: "Tutti i Pokémon nella squadra dell'utilizzatore vengono curati dei loro problemi di stato non volatili. I Pokémon in campo con l'abilità Mangiaerba non vengono curati, a meno che non siano l'utilizzatore.",
 		shortDesc: "Cura i problemi di stato della squadra.",
 		gen5: {
 			desc: "Tutti i Pokémon nella squadra dell'utilizzatore vengono curati dei loro problemi di stato non volatili.",
@@ -235,25 +235,25 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	assist: {
 		name: "Assistente",
 		// Official flavor text: "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
-		desc: "Viene usata una mossa casuale tra quelle conosciute dai membri della squadra dell'utilizzatore. Non può scegliere Assistente, Fortino, Cannonbecco, Rutto, Cediregalo, Turboustione, Rimbalzo, Auguri, Schiamazzo, Ribaltiro, Turborissa, Copione, Contrattacco, Supplica, Destinobbligato, Individua, Fossa, Sub, Codadrago, Resistenza, Fintoattacco, Volo, Centripugno, Sonoqui, Altruismo, Mano nella Mano, Scudo Reale, Turboincanto, Ribaltappeto, Precedenza, Metronomo, Mimica, Specchiovelo, Speculmossa, Naturforza, Turbotossina, Spettrotuffo, Protezione, Polverabbia, Boato, Oscurtuffo, Gusciotrappola, Schizzo, Cadutalibera, Sonnonalia, Scippo, Agodifesa, Riflettore, Scontro, Rapidscambio, Teracluster, Furto, Trasformazione, Raggiro, Turbine o Turbotenebra", 
+		desc: "Viene usata una mossa casuale tra quelle conosciute dai membri della squadra dell'utilizzatore. Non può scegliere Agodifesa, Altruismo, Assistente, Auguri, Boato, Cadutalibera, Cannonbecco, Cediregalo, Centripugno, Codadrago, Contrattacco, Copione, Destinobbligato, Fintoattacco, Fortino, Fossa, Furto, Gusciotrappola, Individua, Mano nella Mano, Metronomo, Mimica, Naturforza, Oscurtuffo, Polverabbia, Precedenza, Protezione, Raggiro, Rapidscambio, Resistenza, Ribaltappeto, Ribaltiro, Riflettore, Rimbalzo, Rutto, Schiamazzo, Schizzo, Scippo, Scontro, Scudo Reale, Sonnonalia, Sonoqui, Specchiovelo, Speculmossa, Spettrotuffo, Sub, Supplica, Teracluster, Trasformazione, Turbine, Turboincanto, Turborissa, Turbotenebra, Turbotossina, Turboustione o Volo.", // NEEDS CHECK
 		shortDesc: "Usa una mossa causale di un membro della squadra.",
 		gen8: {
-			desc: "Viene usata una mossa casuale tra quelle conosciute dai membri della squadra dell'utilizzatore. Non può scegliere Assistente, Fortino, Cannonbecco, Rutto, Cediregalo, Rimbalzo, Auguri, Schiamazzo, Ribaltiro, Copione, Contrattacco, Supplica, Destinobbligato, Individua, Fossa, Sub, Codadrago, Resistenza, Fintoattacco, Volo, Centripugno, Sonoqui, Altruismo, Mano nella Mano, Scudo Reale, Ribaltappeto, Precedenza, Metronomo, Mimica, Specchiovelo, Speculmossa, Naturforza, Spettrotuffo, Protezione, Polverabbia, Boato, Oscurtuffo, Gusciotrappola, Schizzo, Cadutalibera, Sonnonalia, Scippo, Agodifesa, Riflettore, Scontro, Rapidscambio, Furto, Trasformazione, Raggiro o Turbine", 
+			desc: "Viene usata una mossa casuale tra quelle conosciute dai membri della squadra dell'utilizzatore. Non può scegliere Agodifesa, Altruismo, Assistente, Auguri, Boato, Cadutalibera, Cannonbecco, Cediregalo, Centripugno, Codadrago, Contrattacco, Copione, Destinobbligato, Fintoattacco, Fortino, Fossa, Furto, Gusciotrappola, Individua, Mano nella Mano, Metronomo, Mimica, Naturforza, Oscurtuffo, Polverabbia, Precedenza, Protezione, Raggiro, Rapidscambio, Resistenza, Ribaltappeto, Ribaltiro, Riflettore, Rimbalzo, Rutto, Schiamazzo, Schizzo, Scippo, Scontro, Scudo Reale, Sonnonalia, Sonoqui, Specchiovelo, Speculmossa, Spettrotuffo, Sub, Supplica, Trasformazione, Turbine o Volo.", // NEEDS CHECK
 		},
 		gen7: {
-			desc: "Viene usata una mossa casuale tra quelle conosciute dai membri della squadra dell'utilizzatore. Non può scegliere Assistente, Fortino, Cannonbecco, Rutto, Cediregalo, Rimbalzo, Auguri, Schiamazzo, Ribaltiro, Copione, Contrattacco, Supplica, Destinobbligato, Individua, Fossa, Sub, Codadrago, Resistenza, Fintoattacco, Volo, Centripugno, Sonoqui, Altruismo, Mano nella Mano, Scudo Reale, Ribaltappeto, Precedenza, Metronomo, Mimica, Specchiovelo, Speculmossa, Naturforza, Spettrotuffo, Protezione, Polverabbia, Boato, Oscurtuffo, Gusciotrappola, Schizzo, Cadutalibera, Sonnonalia, Scippo, Agodifesa, Riflettore, Scontro, Rapidscambio, Furto, Trasformazione, Raggiro, Turbine o qualunque mozza Z.",
+			desc: "Viene usata una mossa casuale tra quelle conosciute dai membri della squadra dell'utilizzatore. Non può scegliere Agodifesa, Altruismo, Assistente, Auguri, Boato, Cadutalibera, Cannonbecco, Cediregalo, Centripugno, Codadrago, Contrattacco, Copione, Destinobbligato, Fintoattacco, Fortino, Fossa, Furto, Gusciotrappola, Individua, Mano nella Mano, Metronomo, Mimica, Naturforza, Oscurtuffo, Polverabbia, Precedenza, Protezione, Raggiro, Rapidscambio, Resistenza, Ribaltappeto, Ribaltiro, Riflettore, Rimbalzo, Rutto, Schiamazzo, Schizzo, Scippo, Scontro, Scudo Reale, Sonnonalia, Sonoqui, Specchiovelo, Speculmossa, Spettrotuffo, Sub, Supplica, Trasformazione, Turbine, Volo. o qualunque mossa Z.", // NEEDS CHECK
 		},
 		gen6: {
-			desc: "Viene usata una mossa casuale tra quelle conosciute dai membri della squadra dell'utilizzatore. Non può scegliere Assistente, Rutto, Cediregalo, Rimbalzo, Auguri, Schiamazzo, Ribaltiro, Copione, Contrattacco, Supplica, Destinobbligato, Individua, Fossa, Sub, Codadrago, Resistenza, Fintoattacco, Volo, Centripugno, Sonoqui, Altruismo, Mano nella Mano, Scudo Reale, Ribaltappeto, Precedenza, Metronomo, Mimica, Specchiovelo, Speculmossa, Naturforza, Spettrotuffo, Protezione, Polverabbia, Boato, Oscurtuffo, Schizzo, Cadutalibera, Sonnonalia, Scippo, Agodifesa, Scontro, Rapidscambio, Furto, Trasformazione, Raggiro o Turbine", 
+			desc: "Viene usata una mossa casuale tra quelle conosciute dai membri della squadra dell'utilizzatore. Non può scegliere Agodifesa, Altruismo, Assistente, Auguri, Boato, Cadutalibera, Cediregalo, Centripugno, Codadrago, Contrattacco, Copione, Destinobbligato, Fintoattacco, Fossa, Furto, Individua, Mano nella Mano, Metronomo, Mimica, Naturforza, Oscurtuffo, Polverabbia, Precedenza, Protezione, Raggiro, Rapidscambio, Resistenza, Ribaltappeto, Ribaltiro, Rimbalzo, Rutto, Schiamazzo, Schizzo, Scippo, Scontro, Scudo Reale, Sonnonalia, Sonoqui, Specchiovelo, Speculmossa, Spettrotuffo, Sub, Supplica, Trasformazione, Turbine o Volo.", // NEEDS CHECK
 		},
 		gen5: {
-			desc: "Viene usata una mossa casuale tra quelle conosciute dai membri della squadra dell'utilizzatore. Non può scegliere Assistente, Cediregalo, Schiamazzo, Ribaltiro, Copione, Contrattacco, Supplica, Destinobbligato, Individua, Codadrago, Resistenza, Fintoattacco, Centripugno, Sonoqui, Altruismo, Precedenza, Metronomo, Mimica, Specchiovelo, Speculmossa, Naturforza, Protezione, Polverabbia, Schizzo, Sonnonalia, Scippo, Scontro, Rapidscambio, Furto, Trasformazione o Raggiro", 
+			desc: "Viene usata una mossa casuale tra quelle conosciute dai membri della squadra dell'utilizzatore. Non può scegliere Altruismo, Assistente, Cediregalo, Centripugno, Codadrago, Contrattacco, Copione, Destinobbligato, Fintoattacco, Furto, Individua, Metronomo, Mimica, Naturforza, Polverabbia, Precedenza, Protezione, Raggiro, Rapidscambio, Resistenza, Ribaltiro, Schiamazzo, Schizzo, Scippo, Scontro, Sonnonalia, Sonoqui, Specchiovelo, Speculmossa, Supplica o Trasformazione.", // NEEDS CHECK
 		},
 		gen4: {
-			desc: "Viene usata una mossa casuale tra quelle conosciute dai membri della squadra dell'utilizzatore. Non può scegliere Assistente, Schiamazzo, Copione, Contrattacco, Supplica, Destinobbligato, Individua, Resistenza, Fintoattacco, Centripugno, Sonoqui, Altruismo, Precedenza, Metronomo, Mimica, Specchiovelo, Speculmossa, Protezione, Schizzo, Sonnonalia, Scippo, Scontro, Rapidscambio, Furto o Raggiro" 
+			desc: "Viene usata una mossa casuale tra quelle conosciute dai membri della squadra dell'utilizzatore. Non può scegliere Altruismo, Assistente, Centripugno, Contrattacco, Copione, Destinobbligato, Fintoattacco, Furto, Individua, Metronomo, Mimica, Precedenza, Protezione, Raggiro, Rapidscambio, Resistenza, Schiamazzo, Schizzo, Scippo, Scontro, Sonnonalia, Sonoqui, Specchiovelo o Supplica." // NEEDS CHECK
 		},
 		gen3: {
-			desc: "Viene usata una mossa casuale tra quelle conosciute dai membri della squadra dell'utilizzatore. Non può scegliere Assistente, Contrattacco, Supplica, Destinobbligato, Individua, Resistenza, Centripugno, Sonoqui, Altruismo, Metronomo, Mimica, Specchiovelo, Speculmossa, Protezione, Schizzo, Sonnonalia, Scippo, Scontro, Furto o Raggiro", 
+			desc: "Viene usata una mossa casuale tra quelle conosciute dai membri della squadra dell'utilizzatore. Non può scegliere Altruismo, Assistente, Centripugno, Contrattacco, Destinobbligato, Furto, Individua, Metronomo, Mimica, Protezione, Raggiro, Resistenza, Schizzo, Scippo, Scontro, Sonnonalia, Sonoqui, Specchiovelo, Speculmossa o Supplica.",  // NEEDS CHECK
 		},
 	},
 	assurance: {
@@ -268,10 +268,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	astonish: {
 		name: "Sgomento",
 		// Official flavor text: "Chi la usa attacca il bersaglio emettendo un verso terrificante. Può anche farlo tentennare."
-		desc: "Possibilità del 30% di far tentennare l'avversario.", 
-		shortDesc: "30% di far tentennare l'avversario.",
+		desc: "Possibilità del 30% di far tentennare il bersaglio.", // NEEDS CHECK
+		shortDesc: "30% di far tentennare il bersaglio.", // NEEDS CHECK
 		gen3: {
-			desc: "Possibilità del 30% di far tentennare l'avversario. La potenza raddoppia se il bersaglio ha usato Minimizzato da quando è in campo.",
+			desc: "Possibilità del 30% di far tentennare il bersaglio. La potenza raddoppia se il bersaglio ha usato Minimizzato da quando è in campo.", // NEEDS CHECK
 		},
 	},
 	astralbarrage: {
@@ -328,10 +328,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	auroraveil: {
 		name: "Velaurora",
 		// Official flavor text: "Riduce i danni subiti dalle mosse fisiche e dalle mosse speciali per cinque turni. Si può usare solo quando grandina."
-		desc: "Per 5 turni, l'utilizzatore e la sua squadra incassano 0,5x danni dagli attacchi fisici e spaciali, o 0,66x danni se in una Lotta in Doppio; la riduzione dei danni non è cumulabile con Riflesso e Schermoluce. I brutti colpi ignorano questa protezione. Viene rimossa dalla squadra dell'utilizzatore se questo o un suo alleato viene successivamente colpito da Breccia, Psicozanna o Scacciabruma. Breccia e Psicozanna rimuovono l'effetto prima del calcolo dei danni. Dura per 8 turni se l'utilizzatore tiene una Creta luce. Fallisce a meno che la condizione atmosferica attiva non sia la neve.",
+		desc: "Per 5 turni, l'utilizzatore e la sua squadra incassano 0,5x danni dagli attacchi fisici e speciali, o 0,66x danni se in una Lotta in Doppio; la riduzione dei danni non è cumulabile con Riflesso e Schermoluce. I brutti colpi ignorano questa protezione. Viene rimossa dalla squadra dell'utilizzatore se questo o un suo alleato viene successivamente colpito da Breccia, Psicozanna o Scacciabruma. Breccia e Psicozanna rimuovono l'effetto prima del calcolo dei danni. Dura per 8 turni se l'utilizzatore tiene una Creta luce. Fallisce a meno che la condizione atmosferica attiva non sia la neve.", // NEEDS CHECK
 		shortDesc: "Dimezza i danni per 5 turni. Necessita la neve.", 
 		gen8: {
-			desc: "Per 5 turni, l'utilizzatore e la sua squadra incassano 0,5x danni dagli attacchi fisici e spaciali, o 0,66x danni se in una Lotta in Doppio; la riduzione dei danni non è cumulabile con Riflesso e Schermoluce. I brutti colpi ignorano questa protezione. Viene rimossa dalla squadra dell'utilizzatore se questo o un suo alleato viene successivamente colpito da Breccia, Psicozanna o Scacciabruma. Breccia e Psicozanna rimuovono l'effetto prima del calcolo dei danni. Dura per 8 turni se l'utilizzatore tiene una Creta luce. Fallisce a meno che la condizione atmosferica attiva non sia la grandine.",
+			desc: "Per 5 turni, l'utilizzatore e la sua squadra incassano 0,5x danni dagli attacchi fisici e speciali, o 0,66x danni se in una Lotta in Doppio; la riduzione dei danni non è cumulabile con Riflesso e Schermoluce. I brutti colpi ignorano questa protezione. Viene rimossa dalla squadra dell'utilizzatore se questo o un suo alleato viene successivamente colpito da Breccia, Psicozanna o Scacciabruma. Breccia e Psicozanna rimuovono l'effetto prima del calcolo dei danni. Dura per 8 turni se l'utilizzatore tiene una Creta luce. Fallisce a meno che la condizione atmosferica attiva non sia la grandine.", // NEEDS CHECK
 			shortDesc: "Dimezza i danni per 5 turni. Necessita la grandine.", 
 		},
 
@@ -377,13 +377,13 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	banefulbunker: {
 		name: "Fortino",
 		// Official flavor text: "Protegge dagli attacchi e avvelena i Pokémon che lanciano un attacco diretto su chi la usa."
-		desc: "L'utilizzatore è protetto dalla maggior parte degli attacchi scagliati da altri Pokémon durante questo turno; i Pokémon che lo attaccano con mosse da contatto vengono avvelenati. Questa mossa ha 1/X probabilità di avere successo, dove X comincia con valore 1 e triplica ogni volta che la mossa viene usata. X ritorna a 1 se la mossa fallisce o l'ultima mossa usata dall'utilizzatore non è stata Fortino, Egida Ignea, Individua, Resistenza, Scudo Reale, Dynabarriera, Sbarramento, Protezione, Anticipo, Telatrappola, Agodifesa, Bodyguard o se è stata una delle mosse menzionate e l'avversario ha rotto la protezione. Fallisce se l'utilizzatore si muove per ultimo durante questo turno.", // NEEDS CHECK
+		desc: "L'utilizzatore è protetto dalla maggior parte degli attacchi scagliati da altri Pokémon durante questo turno; i Pokémon che lo attaccano con mosse da contatto vengono avvelenati. Questa mossa ha 1/X probabilità di avere successo, dove X comincia con valore 1 e triplica ogni volta che la mossa viene usata. X ritorna a 1 se la mossa fallisce o l'ultima mossa usata dall'utilizzatore non è stata Agodifesa, Anticipo, Bodyguard, Dynabarriera, Egida Ignea, Fortino, Individua, Protezione, Resistenza, Sbarramento, Scudo Reale, Telatrappola o se è stata una delle mosse menzionate e l'avversario ha rotto la protezione. Fallisce se l'utilizzatore si muove per ultimo durante questo turno.", // NEEDS CHECK
 		shortDesc: "Protegge dalle mosse. Contatto: Avvelenamento.", // NEEDS CHECK
 		gen8: {
-			desc: "L'utilizzatore è protetto dalla maggior parte degli attacchi scagliati da altri Pokémon durante questo turno; i Pokémon che lo attaccano con mosse da contatto vengono avvelenati. Questa mossa ha 1/X probabilità di avere successo, dove X comincia con valore 1 e triplica ogni volta che la mossa viene usata. X ritorna a 1 se la mossa fallisce o l'ultima mossa usata dall'utilizzatore non è stata Fortino, Individua, Resistenza, Scudo Reale, Dynabarriera, Sbarramento, Protezione, Anticipo, Agodifesa, Bodyguard o se è stata una delle mosse menzionate e l'avversario ha rotto la protezione. Fallisce se l'utilizzatore si muove per ultimo durante questo turno.", // NEEDS CHECK
+			desc: "L'utilizzatore è protetto dalla maggior parte degli attacchi scagliati da altri Pokémon durante questo turno; i Pokémon che lo attaccano con mosse da contatto vengono avvelenati. Questa mossa ha 1/X probabilità di avere successo, dove X comincia con valore 1 e triplica ogni volta che la mossa viene usata. X ritorna a 1 se la mossa fallisce o l'ultima mossa usata dall'utilizzatore non è stata Agodifesa, Anticipo, Bodyguard, Dynabarriera, Fortino, Individua, Protezione, Resistenza, Sbarramento, Scudo Reale o se è stata una delle mosse menzionate e l'avversario ha rotto la protezione. Fallisce se l'utilizzatore si muove per ultimo durante questo turno.", // NEEDS CHECK
 		},
 		gen7: {
-			desc: "L'utilizzatore è protetto dalla maggior parte degli attacchi scagliati da altri Pokémon durante questo turno; i Pokémon che lo attaccano con mosse da contatto vengono avvelenati. Questa mossa ha 1/X probabilità di avere successo, dove X comincia con valore 1 e triplica ogni volta che la mossa viene usata. X ritorna a 1 se la mossa fallisce o l'ultima mossa usata dall'utilizzatore non è stata Fortino, Individua, Resistenza, Scudo Reale, Protezione, Anticipo, Agodifesa, Bodyguard o se è stata una delle mosse menzionate e l'avversario ha rotto la protezione. Fallisce se l'utilizzatore si muove per ultimo durante questo turno.", // NEEDS CHECK
+			desc: "L'utilizzatore è protetto dalla maggior parte degli attacchi scagliati da altri Pokémon durante questo turno; i Pokémon che lo attaccano con mosse da contatto vengono avvelenati. Questa mossa ha 1/X probabilità di avere successo, dove X comincia con valore 1 e triplica ogni volta che la mossa viene usata. X ritorna a 1 se la mossa fallisce o l'ultima mossa usata dall'utilizzatore non è stata Agodifesa, Anticipo, Bodyguard, Fortino, Individua, Protezione, Resistenza, Scudo Reale o se è stata una delle mosse menzionate e l'avversario ha rotto la protezione. Fallisce se l'utilizzatore si muove per ultimo durante questo turno.", // NEEDS CHECK
 		},
 	},
 	barbbarrage: {
@@ -403,7 +403,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "Colpisce da due a cinque volte. Ha una possibilità di 3/8 di colpire due o tre volte e una di 1/8 di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi.", // NEEDS CHECK
 		},
 		gen1: {
-			desc: "Colpisce da due a cinque volte. Ha una possibilità di 3/8 di colpire due o tre volte e una di 1/8 di colpire quattro o cinque volte. Il danno è calcolato una volta per il primo colpo e usato per ogni altro colpo. Se uno dei colpi rompe il Sostituto del bersaglio, la mossa viene terminata.", // NEEDS CHECK
+			desc: "Colpisce da due a cinque volte. Ha una possibilità di 3/8 di colpire due o tre volte e una di 1/8 di colpire quattro o cinque volte. Il danno è calcolato una volta per il primo colpo e usato per ogni altro colpo. Se uno dei colpi rompe il Sostituto del bersaglio, la mossa si interrompe.", // NEEDS CHECK
 		},
 	},
 	barrier: {
@@ -415,25 +415,25 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	batonpass: {
 		name: "Staffetta",
 		// Official flavor text: "Chi la usa è sostituito da un Pokémon della squadra, che eredita anche ogni modifica alle statistiche."
-		desc: "L'utilizzatore viene rimpiazzato con un altro membro della squadra. Il Pokémon selezionato riceve le modifiche alle statistiche dell'utilizzatore, oltre agli effetti di confusione, Acquavelo, Maledizione, Grido del Drago, Divieto, Focalenergia, Gastroacido, Anticura, Radicamento, Parassiseme, Localizza (Leggimente), Magnetascesa, Ultimocanto, Ingannoforza, Telecinesi e Sostituto con i relativi PS rimasti. L'effetto di Gastroacido non viene trasferito se il Pokémon che entra in campo ha un'abilità che ne è immune.", // NEEDS CHECK
+		desc: "L'utilizzatore viene rimpiazzato con un altro membro della squadra. Il Pokémon selezionato riceve le modifiche alle statistiche dell'utilizzatore, oltre agli effetti di confusione, Acquavelo, Anticura, Divieto, Focalenergia, Gastroacido, Grido del Drago, Ingannoforza, Localizza (Leggimente), Magnetascesa, Maledizione, Parassiseme, Radicamento, Telecinesi, Ultimocanto e Sostituto con i relativi PS rimasti. L'effetto di Gastroacido non viene trasferito se il Pokémon che entra in campo ha un'abilità che ne è immune.", // NEEDS CHECK
 		shortDesc: "L'utilizzatore si ritira passando vari effetti.", // NEEDS CHECK
 		gen8: {
-			desc: "L'utilizzatore viene rimpiazzato con un altro membro della squadra. Il Pokémon selezionato riceve le modifiche alle statistiche dell'utilizzatore, oltre agli effetti di confusione, Acquavelo, Maledizione, Divieto, Focalenergia, Gastroacido, Anticura, Radicamento, Parassiseme, Localizza (Leggimente), Magnetascesa, Ultimocanto, Ingannoforza, Telecinesi e Sostituto con i relativi PS rimasti. L'effetto di Gastroacido non viene trasferito se il Pokémon che entra in campo ha un'abilità che ne è immune.", // NEEDS CHECK
+			desc: "L'utilizzatore viene rimpiazzato con un altro membro della squadra. Il Pokémon selezionato riceve le modifiche alle statistiche dell'utilizzatore, oltre agli effetti di confusione, Acquavelo, Anticura, Divieto, Focalenergia, Gastroacido, Ingannoforza, Localizza (Leggimente), Magnetascesa, Maledizione, Parassiseme, Radicamento, Telecinesi, Ultimocanto e Sostituto con i relativi PS rimasti. L'effetto di Gastroacido non viene trasferito se il Pokémon che entra in campo ha un'abilità che ne è immune.", // NEEDS CHECK
 		},
 		gen7: {
-			desc: "L'utilizzatore viene rimpiazzato con un altro membro della squadra. Il Pokémon selezionato riceve le modifiche alle statistiche dell'utilizzatore, oltre agli effetti di confusione, Acquavelo, Maledizione, Divieto, Focalenergia, Gastroacido, Anticura, Radicamento, Parassiseme, Localizza (Leggimente), Magnetascesa, Ultimocanto, Ingannoforza, Telecinesi, lo stato antifuga (Malosguardo, Blocco, Ragnatela) e Sostituto con i relativi PS rimasti. L'effetto di Gastroacido non viene trasferito se il Pokémon che entra in campo ha un'abilità che ne è immune. L'effetto di Telecinesi non viene trasferito se il Pokémon ricevente è Mega Gengar.", // NEEDS CHECK
+			desc: "L'utilizzatore viene rimpiazzato con un altro membro della squadra. Il Pokémon selezionato riceve le modifiche alle statistiche dell'utilizzatore, oltre agli effetti di confusione, Acquavelo, Anticura, Divieto, Focalenergia, Gastroacido, Ingannoforza, Localizza (Leggimente), Magnetascesa, Maledizione, Parassiseme, Radicamento, Telecinesi, Ultimocanto, lo stato antifuga (Malosguardo, Blocco, Ragnatela) e Sostituto con i relativi PS rimasti. L'effetto di Gastroacido non viene trasferito se il Pokémon che entra in campo ha un'abilità che ne è immune. L'effetto di Telecinesi non viene trasferito se il Pokémon ricevente è Mega Gengar.", // NEEDS CHECK
 		},
 		gen5: {
-			desc: "L'utilizzatore viene rimpiazzato con un altro membro della squadra. Il Pokémon selezionato riceve le modifiche alle statistiche dell'utilizzatore, oltre agli effetti di confusione, Acquavelo, Maledizione, Divieto, Focalenergia, Gastroacido, Anticura, Radicamento, Parassiseme, Localizza (Leggimente), Magnetascesa, Ultimocanto, Ingannoforza, Telecinesi, lo stato antifuga (Malosguardo, Blocco, Ragnatela) e Sostituto con i relativi PS rimasti.", // NEEDS CHECK
+			desc: "L'utilizzatore viene rimpiazzato con un altro membro della squadra. Il Pokémon selezionato riceve le modifiche alle statistiche dell'utilizzatore, oltre agli effetti di confusione, Acquavelo, Anticura, Divieto, Focalenergia, Gastroacido, Ingannoforza, Localizza (Leggimente), Magnetascesa, Maledizione, Parassiseme, Radicamento, Telecinesi, Ultimocanto, lo stato antifuga (Malosguardo, Blocco, Ragnatela) e Sostituto con i relativi PS rimasti.", // NEEDS CHECK
 		},
 		gen4: {
-			desc: "L'utilizzatore viene rimpiazzato con un altro membro della squadra. Il Pokémon selezionato riceve le modifiche alle statistiche dell'utilizzatore, oltre agli effetti di confusione, Acquavelo, Maledizione, Divieto, Focalenergia, Gastroacido, Anticura, Radicamento, Parassiseme, Localizza (Leggimente), Magnetascesa, Fangata, Ultimocanto, Ingannoforza, Telecinesi, Docciascudo, lo stato antifuga (Malosguardo, Blocco, Ragnatela) e Sostituto con i relativi PS rimasti." // NEEDS CHECK
+			desc: "L'utilizzatore viene rimpiazzato con un altro membro della squadra. Il Pokémon selezionato riceve le modifiche alle statistiche dell'utilizzatore, oltre agli effetti di confusione, Acquavelo, Anticura, Divieto, Docciascudo, Fangata, Focalenergia, Gastroacido, Ingannoforza, Localizza (Leggimente), Magnetascesa, Maledizione, Parassiseme, Radicamento, Telecinesi, Ultimocanto, lo stato antifuga (Malosguardo, Blocco, Ragnatela) e Sostituto con i relativi PS rimasti." // NEEDS CHECK
 		},
 		gen3: {
-			desc: "L'utilizzatore viene rimpiazzato con un altro membro della squadra. Il Pokémon selezionato riceve le modifiche alle statistiche dell'utilizzatore, oltre agli effetti di confusione, Maledizione, Focalenergia, Radicamento, Parassiseme, Localizza (Leggimente), Fangata, Ultimocanto, Docciascudo, lo stato antifuga (Malosguardo, Blocco, Ragnatela) e Sostituto con i relativi PS rimasti.", // NEEDS CHECK
+			desc: "L'utilizzatore viene rimpiazzato con un altro membro della squadra. Il Pokémon selezionato riceve le modifiche alle statistiche dell'utilizzatore, oltre agli effetti di confusione, Docciascudo, Fangata, Focalenergia, Localizza (Leggimente), Maledizione, Parassiseme, Ultimocanto, lo stato antifuga (Malosguardo, Blocco, Ragnatela) e Sostituto con i relativi PS rimasti.", // NEEDS CHECK
 		},
 		gen2: {
-			desc: "L'utilizzatore viene rimpiazzato con un altro membro della squadra. Il Pokémon selezionato riceve le modifiche alle statistiche dell'utilizzatore, oltre agli effetti di confusione, Maledizione, Ricciolscudo, Focalenergia, Preveggenza, Parassiseme, Localizza (Leggimente), Minimizzato, Nebbia, Ultimocanto, lo stato antifuga (Malosguardo, Ragnatela) e Sostituto con i relativi PS rimasti.", // NEEDS CHECK
+			desc: "L'utilizzatore viene rimpiazzato con un altro membro della squadra. Il Pokémon selezionato riceve le modifiche alle statistiche dell'utilizzatore, oltre agli effetti di confusione, Focalenergia, Localizza (Leggimente), Maledizione, Minimizzato, Nebbia, Parassiseme, Preveggenza, Ricciolscudo, Ultimocanto, lo stato antifuga (Malosguardo, Ragnatela) e Sostituto con i relativi PS rimasti.", // NEEDS CHECK
 		},
 	},
 	beakblast: {
@@ -448,7 +448,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Picchiaduro",
 		// Official flavor text: "Chi la usa chiama in aiuto i Pokémon della squadra: più ce ne sono, maggiore è il numero di attacchi."
 		desc: "Colpisce una volta per l'utilizzatore e una volta per ogni Pokémon non KO senza problemi di stato non volatili nella squadra dell'utilizzatore. La potenza di ogni colpo equivale a 5+(X/10), dove X è l'Attacco base di ogni Pokémon partecipante; ogni colpo viene considerato come se l'avesse scagliato l'utilizzatore.", // NEEDS CHECK
-		shortDesc: "Tutti gli alleati in salute danneggiano l'avversario.", // NEEDS CHECK
+		shortDesc: "Tutti gli alleati in salute danneggiano il bersaglio.", // NEEDS CHECK
 		gen4: {
 			desc: "Infligge danno senza tipo. Colpisce una volta per l'utilizzatore e una volta per ogni Pokémon non KO senza problemi di stato non volatili nella squadra dell'utilizzatore. Per ogni colpo, la formula dei danni usa l'Attacco base del Pokémon partecipante come statistica di Attacco, la Difesa base del bersaglio come statistica di Difesa e ignora modifiche alle statistiche o altri effetti che modificano i risultanti valori di Attacco e Difesa; ogni colpo viene considerato come se l'avesse scagliato l'utilizzatore.", // NEEDS CHECK
 		},
@@ -478,10 +478,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	belch: {
 		name: "Rutto",
 		// Official flavor text: "Chi la usa attacca il bersaglio con un rutto potente. Per utilizzare questa mossa, il Pokémon deve mangiare la bacca che possiede."
-		desc: "Questa mossa non può esssere selezionata finché l'utilizzatore non mangia una bacca, che sia mangiandone una tenuta, rubandone una tenuta da un altro Pokémon con Coleomorso o Spennata o mangiandone una ottenuta tramite Lancio. Una volta soddisfatta questa condizione, questa mossa può essere selezionata fino alla fine della battaglia anche se l'utilizzatore guadagna o usa un altro strumento o se viene ritirato dal campo. Consumare una bacca con Dononaturale non conta come mangiarla.", // NEEDS CHECK
+		desc: "Questa mossa non può essere selezionata finché l'utilizzatore non mangia una bacca, che sia mangiandone una tenuta, rubandone una tenuta da un altro Pokémon con Coleomorso o Spennata o mangiandone una ottenuta tramite Lancio. Una volta soddisfatta questa condizione, questa mossa può essere selezionata fino alla fine della battaglia anche se l'utilizzatore guadagna o usa un altro strumento o se viene ritirato dal campo. Consumare una bacca con Dononaturale non conta come mangiarla.", // NEEDS CHECK
 		shortDesc: "Inutilizzabile finché non viene mangiata una bacca.", // NEEDS CHECK
 		champions: {
-			desc: "Qyesta mossa non può essere selezionata finché l'utilizzatore non mangia una bacca, che sia mangiandone una tenuta, rubandone una tenuta da un altro Pokémon con Coleomorso o Spennata o mangiandone una ottenuta tramite con Lancio. Consumare una bacca con Dononaturale non conta come mangiarla.", // NEEDS TRANSLATION: not in PokeAPI
+			desc: "Questa mossa non può essere selezionata finché l'utilizzatore non mangia una bacca, che sia mangiandone una tenuta, rubandone una tenuta da un altro Pokémon con Coleomorso o Spennata o mangiandone una ottenuta tramite con Lancio. Consumare una bacca con Dononaturale non conta come mangiarla.", // NEEDS TRANSLATION: not in PokeAPI
 			shortDesc: "Inutilizzabile finché non viene mangiata una bacca.", // NEEDS TRANSLATION: not in PokeAPI
 		},
 	},
@@ -505,7 +505,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "Il bersaglio riceve lo strumento dell'utilizzatore. Fallisce se l'utilizzatore non ha uno strumento, se il bersaglio tiene già uno strumento, se lo strumento è una Megapietra e uno tra il bersaglio o l'utilizzatore è della specie capace di Megaevolversi grazie alla suddetta Megapietra o se lo strumento è una Gemma blu, Gemma rossa, Grigiosfera, Lastra o Modulo e l'utilizzatore o il bersaglio è rispettivamente Kyogre, Groudon, Giratina, Arceus o Genesect.", // NEEDS CHECK
 		},
 		gen5: {
-			desc: "Il bersaglio riceve lo strumento dell'utilizzatore. Fallisce se l'utilizzatore non ha uno strumento o tiene un Messaggio, se il bersaglio tiene già uno strumento o se lo strumento è una Grigiopietra, Lastra o Modulo e l'utilizzatore o il bersaglio è rispettivamente Giratina, Arceus o Genesect.", // NEEDS CHECK
+			desc: "Il bersaglio riceve lo strumento dell'utilizzatore. Fallisce se l'utilizzatore non ha uno strumento o tiene un Messaggio, se il bersaglio tiene già uno strumento o se lo strumento è una Grigiosfera, Lastra o Modulo e l'utilizzatore o il bersaglio è rispettivamente Giratina, Arceus o Genesect.", // NEEDS CHECK
 		},
 
 		takeItem: "  {POKEMON} ottiene {ITEM:definite} di {SOURCE}!",
@@ -513,20 +513,20 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	bide: {
 		name: "Pazienza",
 		// Official flavor text: "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "L'utilizzatore è bloccato su questa mossa per due turni, dopodiché l'utilizzatore attacca l'ultimo Pokémon che l'ha colpito infliggendo il doppio dei danni ricevuti nei due turni precedenti. Se l'ultimo Pokémon che ha colpito l'utilizzatore non è più in campo, viene scelto un avversario casuale come bersaglio. Se l'utilizzatore non è in grado di muoversi durante l'uso di questa mossa, il suo effetto termina. Questa mossa va sempre a segno e non ignora le immunità di tipo. ", // NEEDS CHECK
+		shortDesc: "Infliggi il doppio dei danni ricevuti dopo 2 turni.", // NEEDS CHECK
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore è bloccato su questa mossa per due turni, dopodiché l'utilizzatore attacca l'ultimo Pokémon che l'ha colpito infliggendo il doppio dei danni ricevuti nei due turni precedenti. Se l'ultimo Pokémon che ha colpito l'utilizzatore non è più in campo, viene scelto un avversario casuale come bersaglio. Se l'utilizzatore non è in grado di muoversi durante l'uso di questa mossa, il suo effetto termina. Questa mossa va sempre a segno e ignora le immunità di tipo. ", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore è bloccato su questa mossa per due turni, dopodiché l'utilizzatore attacca l'ultimo Pokémon che l'ha colpito infliggendo il doppio dei danni ricevuti nei due turni precedenti. Se l'ultimo Pokémon che ha colpito l'utilizzatore non è più in campo, viene scelto un avversario casuale come bersaglio. Se l'utilizzatore non è in grado di muoversi durante l'uso di questa mossa, il suo effetto termina. Questa mossa non ignora le immunità di tipo. ", // NEEDS CHECK
 		},
 		gen2: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore è bloccato su questa mossa per due o tre turni, dopodiché l'utilizzatore attacca l'avversario infliggendo il doppio dei danni ricevuti nei due o tre turni precedenti. Se l'utilizzatore non è in grado di muoversi durante l'uso di questa mossa, il suo effetto termina. Questa mossa non ignora le immunità di tipo. ", // NEEDS CHECK
+			shortDesc: "Infliggi il doppio dei danni ricevuti dopo 2-3 turni.", // NEEDS CHECK
 		},
 		gen1: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore è bloccato su questa mossa per due o tre turni, dopodiché l'utilizzatore attacca l'avversario infliggendo il doppio dei danni ricevuti nei due o tre turni precedenti. Questa mossa ignora le immunità di tipo e va sempre a segno, anche se l'avversario usa Fossa o Volo. L'utilizzatore può essere ritirato dal campo durante l'effetto di questa mossa. Se l'utilizzatore viene scambiato o non è in grado di muoversi durante l'uso di questa mossa, il suo effetto termina. Se durante l'effetto di questa mossa l'avversario viene ritirato o usa Conversione, Covauova, Focalenergia, Mimica, Nebbia, Nube, Paralizzante, Parassiseme, Riflesso, Riposo, Ripresa, Sguardo Feroce, Sostituto, Specchiovelo, Splash, Stordiraggio, Supersuono, Teletrasporto, Tossina, Trasformazione, Tuononda, Velenogas o Velenpolvere, i danni inflitti precedentemente all'utilizzatore si sommano al totale.", // NEEDS CHECK
 		},
 
 		start: "  {POKEMON} accumula energia!",
@@ -536,27 +536,27 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	bind: {
 		name: "Legatutto",
 		// Official flavor text: "Il lungo corpo o i tentacoli di chi la usa legano e stritolano il bersaglio per quattro o cinque turni."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Impedisce al bersaglio di essere ritirato per 4-5 turni (7 turni con Presartigli). Infligge danni pari a 1/8 dei PS massimi del bersaglio (1/6 con Legafascia), arrotondati per difetto, alla fine di ogni turno durante il suo effetto. Il bersaglio può comunque ritirarsi se tiene un Disfoguscio o se usa Freddura, Invertivolt, Monito, Retromarcia, Staffetta, Tagliacoda, Teletrasporto o Virata. L'effetto termina se l'utilizzatore o il bersaglio lasciano il campo o se il bersaglio usa Glitturbine, Rapigiro o Sostituto con successo. Questo effetto non è cumulabile e non viene sovrascritto usando di nuovo questa mossa o un'altra mossa imprigionante.", // NEEDS CHECK
+		shortDesc: "Imprigiona e danneggia il bersaglio per 4-5 turni.", // NEEDS CHECK
 		gen8: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Impedisce al bersaglio di essere ritirato per 4-5 turni (7 turni con Presartigli). Infligge danni pari a 1/8 dei PS massimi del bersaglio (1/6 con Legafascia), arrotondati per difetto, alla fine di ogni turno durante il suo effetto. Il bersaglio può comunque ritirarsi se tiene un Disfoguscio o se usa Invertivolt, Monito, Retromarcia, Staffetta, Teletrasporto o Virata. L'effetto termina se l'utilizzatore o il bersaglio lasciano il campo o se il bersaglio usa Rapigiro o Sostituto con successo. Questo effetto non è cumulabile e non viene sovrascritto usando di nuovo questa mossa o un'altra mossa imprigionante.", // NEEDS CHECK
 		},
 		gen7: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Impedisce al bersaglio di essere ritirato per 4-5 turni (7 turni con Presartigli). Infligge danni pari a 1/8 dei PS massimi del bersaglio (1/6 con Legafascia), arrotondati per difetto, alla fine di ogni turno durante il suo effetto. Il bersaglio può comunque ritirarsi se tiene un Disfoguscio o se usa Invertivolt, Monito, Retromarcia o Staffetta. L'effetto termina se l'utilizzatore o il bersaglio lasciano il campo o se il bersaglio usa Rapigiro o Sostituto con successo. Questo effetto non è cumulabile e non viene sovrascritto usando di nuovo questa mossa o un'altra mossa imprigionante.", // NEEDS CHECK
 		},
 		gen5: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Impedisce al bersaglio di essere ritirato per 4-5 turni (7 turni con Presartigli). Infligge danni pari a 1/16 dei PS massimi del bersaglio (1/8 con Legafascia), arrotondati per difetto, alla fine di ogni turno durante il suo effetto. Il bersaglio può comunque ritirarsi se tiene un Disfoguscio o se usa Invertivolt, Retromarcia o Staffetta. L'effetto termina se l'utilizzatore o il bersaglio lasciano il campo o se il bersaglio usa Rapigiro o Sostituto con successo. Questo effetto non è cumulabile e non viene sovrascritto usando di nuovo questa mossa o un'altra mossa intrappolante.", // NEEDS CHECK
 		},
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Impedisce al bersaglio di essere ritirato per 2-5 turni (sempre 5 turni con Presartigli). Infligge danni pari a 1/16 dei PS massimi del bersaglio, arrotondati per difetto, alla fine di ogni turno durante il suo effetto. Il bersaglio può comunque ritirarsi se tiene un Disfoguscio o se usa Retromarcia o Staffetta. L'effetto termina se l'utilizzatore o il bersaglio lasciano il campo o se il bersaglio usa Rapigiro o Sostituto con successo. Questo effetto non è cumulabile e non viene sovrascritto usando di nuovo questa mossa o un'altra mossa imprigionante.", // NEEDS CHECK
+			shortDesc: "Imprigiona e danneggia il bersaglio per 2-5 turni.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Impedisce al bersaglio di essere ritirato per 2-5 turni. Infligge danni pari a 1/16 dei PS massimi del bersaglio, arrotondati per difetto, alla fine di ogni turno durante il suo effetto. Il bersaglio può comunque ritirarsi se usa Staffetta. L'effetto termina se l'utilizzatore o il bersaglio lasciano il campo o se il bersaglio usa Rapigiro o Sostituto con successo. Questo effetto non è cumulabile e non viene sovrascritto usando di nuovo questa mossa o un'altra mossa imprigionante.", // NEEDS CHECK
 		},
 		gen1: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore usa questa mossa per 2-5 turni. Ha una possibilità di 3/8 di durare due o tre turni e una di 1/8 di durare quattro o cinque turni. Il danno è calcolato una volta per il primo turno e usato per ogni altro turno. L'utilizzatore non può selezionare una mossa e il bersaglio non può eseguirne alcuna durante l'effetto di questa mossa, ma entrambi possono essere ritirati dal campo. Se l'utilizzatore viene ritirato, il bersaglio resta incapace di usare una mossa durante quel turno. Se il bersaglio viene ritirato, l'utilizzatore usa automaticamente questa mossa di nuovo e, se aveva 0 PP rimasti al momento, i PP diventano 63. Se l'utilizzatore o il bersaglio vengono ritirati o se l'utilizzatore è incapace di muoversi, l'effetto di questa mossa termina. Se il bersaglio ha un'immunità di tipo contro questa mossa, non riceve danni ma resta comunque incapace di muoversi.", // NEEDS CHECK
+			shortDesc: "Impedisce al bersaglio di muoversi per 2-5 turni.", // NEEDS CHECK
 		},
 
 		start: "  {SOURCE} stritola {POKEMON} con Legatutto!",
@@ -565,180 +565,180 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	bite: {
 		name: "Morso",
 		// Official flavor text: "Il bersaglio viene morso da denti affilatissimi che possono farlo tentennare."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 30% di far tentennare il bersaglio.", // NEEDS CHECK
+		shortDesc: "Possibilità del 30% di far tentennare il bersaglio.", // NEEDS CHECK
 		gen1: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Possibilità del 10% di far tentennare il bersaglio.", // NEEDS CHECK
+			shortDesc: "30% di far tentennare il bersaglio.", // NEEDS CHECK
 		},
 	},
 	bitterblade: {
 		name: "Lama del Rimorso",
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "L'utilizzatore recupera 1/2 dei PS sottratti al bersaglio, arrotondati per eccesso sul valore intermedio. Se l'utilizzatore tiene una Granradice, recupera 1,3x i PS, arrotondati per difetto sul valore intermedio.", // NEEDS CHECK
+		shortDesc: "Recupera il 50% dei danni inflitti.", // NEEDS CHECK
 	},
 	bittermalice: {
 		name: "Livore",
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 100% di ridurre l'Attacco del bersaglio di 1 stadio.", // NEEDS CHECK
+		shortDesc: "Riduce l'Att del bersaglio di 1 stadio.", // NEEDS CHECK
 	},
 	blackholeeclipse: {
 		name: "Buco Nero del Non Ritorno",
-		shortDesc: null, // NEEDS TRANSLATION
+		shortDesc: "Potenza influenzata dalla mossa di partenza.", // NEEDS CHECK
 	},
 	blastburn: {
 		name: "Incendio",
 		// Official flavor text: "Potente esplosione che danneggia il bersaglio, ma fa saltare il turno successivo a chi la provoca."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Se la mossa ha successo, l'utilizzatore salta il turno successivo e non può scegliere una mossa.", // NEEDS CHECK
+		shortDesc: "L'utilizzatore salta il prossimo turno.", // NEEDS CHECK
 	},
 	blazekick: {
 		name: "Calciardente",
 		// Official flavor text: "Chi la usa tira un calcio. Probabile brutto colpo. Può anche scottare il bersaglio."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 10% di scottare il bersaglio. Maggiori probabilità di infliggere un brutto colpo.", // NEEDS CHECK
+		shortDesc: "Probabile brutto colpo. 10% di scottare.", // NEEDS CHECK
 	},
 	blazingtorque: {
 		name: "Turboustione",
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 30% di scottare il bersaglio.", // NEEDS CHECK
+		shortDesc: "30% di scottare il bersaglio.", // NEEDS CHECK
 	},
 	bleakwindstorm: {
 		name: "Tempesta Boreale",
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 30% di ridurre la Velocità dei bersagli di 1 stadio. Se la condizione atmosferica attiva è pioggia o acquazzone, questa mossa va sempre a segno. Se usata contro un Pokémon con il Superombrello, la precisione di questa mossa rimane 80%", // NEEDS CHECK
+		shortDesc: "30% -1 Vel. Va sempre a segno sotto pioggia.", // NEEDS CHECK
 	},
 	blizzard: {
 		name: "Bora",
 		// Official flavor text: "Colpisce i nemici intorno con una tremenda tempesta di ghiaccio che può anche congelarli."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 10% di congelare i bersagli. Se la condizione atmosferica attiva è neve, questa mossa va sempre a segno.", // NEEDS CHECK
+		shortDesc: "10% congelamento. Va sempre a segno sotto neve.", // NEEDS CHECK
 		gen8: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Possibilità del 10% di congelare i bersagli. Se la condizione atmosferica attiva è grandine, questa mossa va sempre a segno.", // NEEDS CHECK
+			shortDesc: "10% congelamento. Va sempre a segno sotto grandine.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Possibilità del 10% di congelare i bersagli.", // NEEDS CHECK
+			shortDesc: "10% congelamento. Colpisce nemici adiacenti.", // NEEDS CHECK
 		},
 		gen2: {
-			shortDesc: null, // NEEDS TRANSLATION
+			shortDesc: "10% di congelare il bersaglio.", // NEEDS CHECK
 		},
 	},
 	block: {
 		name: "Blocco",
 		// Official flavor text: "Chi la usa sbarra la strada al bersaglio impedendone la fuga o la sostituzione."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Impedisce al bersaglio di essere ritirato. Il bersaglio può comunque essere ritirato se tiene un Disfoguscio o usa Invertivolt, Monito, Retromarcia, Staffetta, Teletrasporto o Virata. L'effetto termina se l'utilizzatore o il bersaglio lasciano il campo.", // NEEDS CHECK
+		shortDesc: "Impedisce al bersaglio di essere ritirato.", // NEEDS CHECK
 		gen7: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Impedisce al bersaglio di essere ritirato. Il bersaglio può comunque essere ritirato se tiene un Disfoguscio o usa Invertivolt, Monito, Retromarcia o Staffetta. Se il bersaglio lascia il campo usando Staffetta, il suo alleato in entrata rimarrà imprigionato. L'effetto termina se l'utilizzatore lascia il campo.", // NEEDS CHECK
 		},
 		gen5: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Impedisce al bersaglio di essere ritirato. Il bersaglio può comunque essere ritirato se tiene un Disfoguscio o usa Invertivolt, Retromarcia o Staffetta. Se il bersaglio lascia il campo usando Staffetta, il suo alleato in entrata rimarrà imprigionato. L'effetto termina se l'utilizzatore lascia il campo."ll, // NEEDS CHECK
 		},
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Impedisce al bersaglio di essere ritirato. Il bersaglio può comunque essere ritirato se tiene un Disfoguscio o usa Retromarcia o Staffetta. Se il bersaglio lascia il campo usando Staffetta, il suo alleato in entrata rimarrà imprigionato. L'effetto termina se l'utilizzatore lascia il campo a meno che non usi Staffetta, in tal caso, il bersaglio continua a essere imprigionato.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Impedisce al bersaglio di essere ritirato. Il bersaglio può comunque essere ritirato se usa Staffetta. Se il bersaglio lascia il campo usando Staffetta, il suo alleato in entrata rimarrà imprigionato. L'effetto termina se l'utilizzatore lascia il campo a meno che non usi Staffetta, in tal caso, il bersaglio continua a essere imprigionato.", // NEEDS CHECK
 		},
 	},
 	bloodmoon: {
 		name: "Luna Rossa",
-		shortDesc: null, // NEEDS TRANSLATION
+		shortDesc: "Non può essere selezionata il turno dopo l'uso.", // NEEDS CHECK
 	},
 	bloomdoom: {
 		name: "Floriscoppio Sfolgorante",
-		shortDesc: null, // NEEDS TRANSLATION
+		shortDesc: "Potenza influenzata dalla mossa di partenza.", // NEEDS CHECK
 	},
 	blueflare: {
 		name: "Fuocoblu",
 		// Official flavor text: "Chi la usa attacca il bersaglio avvolgendolo con magnifiche e intense fiamme blu che possono anche scottarlo."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 20% di scottare il bersaglio.", // NEEDS CHECK
+		shortDesc: "20% di scottare il bersaglio.", // NEEDS CHECK
 	},
 	bodypress: {
 		name: "Schiacciacorpo",
 		// Official flavor text: "Chi la usa schiaccia il bersaglio con il suo corpo. Più la sua Difesa è alta, maggiori sono i danni inflitti."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Il calcolo dei danni tiene conto della Difesa dell'utilizzatore invece che il suo Attacco, includendo le modifiche alle statistiche. Altri effetti che influenzano l'Attacco dell'utilizzatore vengono applicati come di norma.", // NEEDS CHECK
+		shortDesc: "Usa la Dif invece che l'Att per calcolare i danni.", // NEEDS CHECK
 	},
 	bodyslam: {
 		name: "Corposcontro",
 		// Official flavor text: "Chi la usa carica il bersaglio con tutto il corpo. Può causarne anche la paralisi."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 30% di paralizzare il bersaglio. Se il bersaglio ha usato Minimizzato da quando è entrato in campo, la potenza raddoppia e va sempre a segno.", // NEEDS CHECK
+		shortDesc: "30% di paralizzare il bersaglio.", // NEEDS CHECK
 		gen5: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Possibilità del 30% di paralizzare il bersaglio.", // NEEDS CHECK
 		},
 	},
 	boltbeak: {
 		name: "Beccoshock",
 		// Official flavor text: "Chi la usa attacca il bersaglio con il becco appuntito carico d’elettricità. Se attacca per primo, la potenza della mossa raddoppia."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "La potenza raddoppia se l'utilizzatore si muove prima del bersaglio.", // NEEDS CHECK
+		shortDesc: "Danni raddoppiati se attacca prima del bersaglio.", // NEEDS CHECK
 	},
 	boltstrike: {
 		name: "Lucesiluro",
 		// Official flavor text: "Colpisce il bersaglio con una possente carica elettrica e può anche paralizzarlo."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 20% di paralizzare il bersaglio.", // NEEDS CHECK
+		shortDesc: "20% di paralizzare il bersaglio.", // NEEDS CHECK
 	},
 	boneclub: {
 		name: "Ossoclava",
 		// Official flavor text: "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 10% di far tentennare il bersaglio.", // NEEDS CHECK
+		shortDesc: "10% di far tentennare il bersaglio.", // NEEDS CHECK
 	},
 	bonemerang: {
 		name: "Ossomerang",
 		// Official flavor text: "Chi la usa lancia l’osso che ha con sé. L’osso colpisce due volte e ritorna come un vero e proprio boomerang."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Colpisce due volte. Se il primo colpo rompe il Sostituto del bersaglio, questo riceverà i danni del secondo colpo.", // NEEDS CHECK
+		shortDesc: "Colpisce 2 volte in un turno.", // NEEDS CHECK
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Colpisce due volte. Se il primo colpo rompe il Sostituto del bersaglio, questo riceverà i danni del secondo colpo. Se il bersaglio tiene un Focalnastro e ha tutti i PS quando questa mossa viene usata, non verrà mandato KO a prescindere dal numero di colpi.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Colpisce due volte. Se il primo colpo rompe il Sostituto del bersaglio, questo riceverà i danni del secondo colpo.", // NEEDS CHECK
 		},
 		gen1: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Colpisce due volte. Se il primo colpo rompe il Sostituto del bersaglio, la mossa si interrompe.", // NEEDS CHECK
 		},
 	},
 	bonerush: {
 		name: "Ossoraffica",
 		// Official flavor text: "Chi la usa colpisce il bersaglio con un osso da due a cinque volte di fila."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Colpisce da due a cinque volte. Ha il 35% di possibilità di colpire due o tre volte e il 15% di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi. Se l'utilizzatore ha l'abilità Abillegame, questa mossa colpisce sempre cinque volte. Se l'utilizzatore tiene un Dado truccato, questa mossa colpisce 4-5 volte.", // NEEDS CHECK
+		shortDesc: "Colpisce 2-5 volte in un turno.", // NEEDS CHECK
 		gen8: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Colpisce da due a cinque volte. Ha il 35% di possibilità di colpire due o tre volte e il 15% di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi. Se l'utilizzatore ha l'abilità Abillegame, questa mossa colpisce sempre cinque volte.", // NEEDS CHECK
 		},
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Colpisce da due a cinque volte. Ha una possibilità di 3/8 di colpire due o tre volte e una di 1/8 di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi. Se l'utilizzatore ha l'abilità Abillegame, questa mossa colpisce sempre cinque volte. Se il bersaglio tiene un Focalnastro e ha tutti i PS quando questa mossa viene usata, non verrà mandato KO a prescindere dal numero di colpi.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Colpisce da due a cinque volte. Ha una possibilità di 3/8 di colpire due o tre volte e una di 1/8 di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi.", // NEEDS CHECK
 		},
 	},
 	boomburst: {
 		name: "Ondaboato",
 		// Official flavor text: "Colpisce i Pokémon che ha intorno con la forza di un boato distruttivo."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Nessun effetto aggiuntivo.", // NEEDS CHECK
+		shortDesc: "Nessun effetto aggiuntivo. Colpisce Pokémon adiacenti.", // NEEDS CHECK
 	},
 	bounce: {
 		name: "Rimbalzo",
 		// Official flavor text: "Chi la usa balza in alto e ricade sul bersaglio dopo un turno. Può anche paralizzarlo."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 30% di paralizzare il bersaglio. Questo attacco si carica durante il primo turno e colpisce durante il secondo. Durante il primo turno l'utilizzatore evita tutti gli attacchi tranne Abbattimento, Mille Frecce, Raffica, Stramontante, Tifone, Tornado e Tuono, con Raffica e Tornado che infliggono danni doppi. Se l'utilizzatore usa una Vigorerba, la mossa viene completata in un turno.", // NEEDS CHECK
+		shortDesc: "Primo turno di semi-invulnerabilità. 30% paralisi.", // NEEDS CHECK
 		gen5: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Possibilità del 30% di paralizzare il bersaglio. Questo attacco si carica durante il primo turno e colpisce durante il secondo. Durante il primo turno l'utilizzatore evita tutti gli attacchi tranne Abbattimento, Raffica, Stramontante, Tifone, Tornado e Tuono, con Raffica e Tornado che infliggono danni doppi. Se l'utilizzatore usa una Vigorerba, la mossa viene completata in un turno.", // NEEDS CHECK
 		},
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Possibilità del 30% di paralizzare il bersaglio. Questo attacco si carica durante il primo turno e colpisce durante il secondo. Durante il primo turno l'utilizzatore evita tutti gli attacchi tranne Raffica, Stramontante, Tornado e Tuono, con Raffica e Tornado che infliggono danni doppi. Se l'utilizzatore usa una Vigorerba, la mossa viene completata in un turno.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Possibilità del 30% di paralizzare il bersaglio. Questo attacco si carica durante il primo turno e colpisce durante il secondo. Durante il primo turno l'utilizzatore evita tutti gli attacchi tranne Raffica, Stramontante, Tornado e Tuono, con Raffica e Tornado che infliggono danni doppi.", // NEEDS CHECK
 		},
 
 		prepare: "{POKEMON} spicca un gran balzo!",
@@ -746,95 +746,96 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	bouncybubble: {
 		name: "Bollaslurp",
 		// Official flavor text: "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "L'utilizzatore recupera 1/2 dei PS sottratti al bersaglio, arrotondati per eccesso sul valore intermedio. Se l'utilizzatore tiene una Granradice, recupera 1,3x i PS, arrotondati per difetto sul valore intermedio.", // NEEDS CHECK
+		shortDesc: "Recupera il 50% dei danni inflitti.", // NEEDS CHECK
 	},
 	branchpoke: {
 		name: "Ramostoccata",
 		// Official flavor text: "Chi la usa attacca il bersaglio con un ramo incredibilmente appuntito."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Nessun effetto aggiuntivo.", // NEEDS CHECK
+		shortDesc: "Nessun effetto aggiuntivo.", // NEEDS CHECK
 	},
 	bravebird: {
 		name: "Baldeali",
 		// Official flavor text: "Chi la usa ripiega le ali e carica da bassa quota. Tuttavia, subisce considerevoli danni."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Se il bersaglio ha subito dei danni, l'utilizzatore subisce un contraccolpo equivalente a 33% dei PS persi dal bersaglio arrotondati per eccesso sul valore intermedio, ma comunque mai meno di 1 PS.", // NEEDS CHECK
+		shortDesc: "Contraccolpo del 33%", // NEEDS CHECK
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Se il bersaglio ha subito dei danni, l'utilizzatore subisce un contraccolpo equivalente a 1/3 dei PS persi dal bersaglio arrotondati per difetto, ma comunque mai meno di 1 PS.", // NEEDS CHECK
+			shortDesc: "Contraccolpo di 1/3.", // NEEDS CHECK
 		},
 	},
 	breakingswipe: {
 		name: "Vastoimpatto",
 		// Official flavor text: "Chi la usa attacca i nemici intorno con la sua robusta coda riducendone l’Attacco."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 100% di ridurre l'Attacco dei bersagli di 1 stadio.", // NEEDS CHECK
+		shortDesc: "Riduce l'Att di 1 stadio. Colpisce nemici adiacenti.", // NEEDS CHECK
 	},
 	breakneckblitz: {
 		name: "Carica Travolgente",
-		shortDesc: null, // NEEDS TRANSLATION
+		shortDesc: "Potenza influenzata dalla mossa di partenza.", // NEEDS CHECK
 	},
 	brickbreak: {
 		name: "Breccia",
 		// Official flavor text: "Colpisce il bersaglio con una mano e rompe barriere come Riflesso e Schermoluce."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Se questo attacco colpisce, gli effetti di Riflesso, Schermoluce e Velaurora si interrompono per la squadra del bersaglio prima del calcolo dei danni.", // NEEDS CHECK
+		shortDesc: "Rompe gli schermi se colpisce.", // NEEDS CHECK
 		gen6: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Se questo attacco colpisce, gli effetti di Riflesso e Schermoluce si interrompono per la squadra del bersaglio prima del calcolo dei danni.", // NEEDS CHECK
 		},
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Se questo attacco non viene evitato, a prescindere dall'immunità di tipo del bersaglio, gli effetti di Riflesso e Schermoluce si interrompono per la squadra del bersaglio prima del calcolo dei danni.", // NEEDS CHECK
+			shortDesc: "Rompe gli schermi, anche se il bersaglio è immune.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Se questo attacco non viene evitato, a prescindere dall'immunità di tipo del bersaglio, gli effetti di Riflesso e Schermoluce si interrompono per la squadra dell'avversario prima del calcolo dei danni.", // NEEDS CHECK
 		},
 
-		activate: null, // NEEDS TRANSLATION
+		activate: "La barriera misteriosa che proteggeva {TEAM} è svanita!", // NEEDS CHECK
 	},
 	brine: {
 		name: "Acquadisale",
 		// Official flavor text: "Se i PS del bersaglio sono scesi a metà o meno, questa mossa colpirà con il doppio della potenza."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "La potenza raddoppia se il bersaglio perso almeno metà dei suoi PS massimi.", // NEEDS CHECK
+		shortDesc: "Danni raddoppiati se il bersaglio è a 50% PS o meno.", // NEEDS CHECK
 	},
 	brutalswing: {
 		name: "Vorticolpo",
 		// Official flavor text: "Chi la usa infligge danni intorno a sé facendo ruotare una parte del suo corpo."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Nessun effetto aggiuntivo.", // NEEDS CHECK
+		shortDesc: "Nessun effetto aggiuntivo. Colpisce Pokémon adiacenti.", // NEEDS CHECK
 	},
 	bubble: {
 		name: "Bolla",
 		// Official flavor text: "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 10% di ridurre la Velocità dei bersagli di 1 stadio.", // NEEDS CHECK
+		shortDesc: "10% -1 Vel. Colpisce nemici adiacenti.", // NEEDS CHECK
 		gen1: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Possibilità del 33% di ridurre la Velocità del bersaglio di 1 stadio.", // NEEDS CHECK
+			shortDesc: "33% di ridurre la Vel del bersaglio di 1 stadio.", // NEEDS CHECK
 		},
 		gen2: {
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Possibilità del 10% di ridurre la Velocità del bersaglio di 1 stadio.", // NEEDS TRANSLATION
+			shortDesc: "10% di ridurre la Vel del bersaglio di 1 stadio.", // NEEDS CHECK
 		},
 	},
 	bubblebeam: {
 		name: "Bollaraggio",
 		// Official flavor text: "Colpisce il bersaglio con una forte scarica di bolle. Può anche ridurne la Velocità."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 10% di ridurre la Velocità del bersaglio di 1 stadio.", // NEEDS CHECK
+		shortDesc: "10% di ridurre la Vel del bersaglio di 1 stadio.", // NEEDS CHECK
 		gen1: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Possibilità del 33% di ridurre la Velocità del bersaglio di 1 stadio.", // NEEDS CHECK
+			shortDesc: "33% di ridurre la Vel del bersaglio di 1 stadio.", // NEEDS CHECK
 		},
 	},
 	bugbite: {
 		name: "Coleomorso",
 		// Official flavor text: "Chi la usa morde il bersaglio. Inoltre, se questi ha una bacca, gliela ruba e ne sfrutta gli effetti."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Se questa mossa ha effetto e il bersaglio non va KO, la bacca tenuta dal bersaglio, se ne tiene una, viene rubata e mangiata immediatamente dall'utilizzatore, che ne sfrutta gli effetti anche se è incapace di usare il proprio strumento. Le bacche perse in questo modo non possono essere recuperate con Riciclo o Coglibacche.", // NEEDS CHECK
+		shortDesc: "Ruba e mangia la bacca del bersaglio.", // NEEDS CHECK
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "La bacca tenuta dal bersaglio, se ne tiene una, viene rubata e mangiata immediatamente dall'utilizzatore, che ne sfrutta gli effetti anche se è incapace di usare il proprio strumento. Le bacche perse in questo modo non possono essere recuperate con Riciclo.", // NEEDS CHECK
 		},
 
 		removeItem: "  {SOURCE} ruba e mangia {ITEM:definite:classified} del bersaglio!",
@@ -842,60 +843,60 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	bugbuzz: {
 		name: "Ronzio",
 		// Official flavor text: "Chi la usa crea un’onda sonora che infligge danni. Può anche ridurre la Difesa Speciale del bersaglio."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 10% di ridurre la Difesa Speciale del bersaglio di 1 stadio.", // NEEDS CHECK
+		shortDesc: "10% di ridurre la DSp del bersaglio di 1 stadio.", // NEEDS CHECK
 	},
 	bulkup: {
 		name: "Granfisico",
 		// Official flavor text: "Chi la usa tende i muscoli per gonfiare il corpo, aumentando Difesa e Attacco."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Aumenta l'Attacco e la Difesa dell'utilizzatore di 1 stadio.", // NEEDS CHECK
+		shortDesc: "Aumenta Att e Dif dell'utilizzatore di 1 stadio.", // NEEDS CHECK
 	},
 	bulldoze: {
 		name: "Battiterra",
 		// Official flavor text: "Chi la usa calpesta il terreno e scatena un terremoto che danneggia i Pokémon nei paraggi, riducendone la Velocità."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 100% di ridurre la Velocità dei bersagli di 1 stadio.", // NEEDS CHECK
+		shortDesc: "-1 Vel. Colpisce i Pokémon adiacenti.", // NEEDS CHECK
 	},
 	bulletpunch: {
 		name: "Pugnoscarica",
 		// Official flavor text: "Chi la usa attacca con una scarica di pugni veloci come proiettili. Questa mossa ha priorità alta."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Nessun effetto aggiuntivo.", // NEEDS CHECK
+		shortDesc: "Alta priorità.", // NEEDS CHECK
 	},
 	bulletseed: {
 		name: "Semitraglia",
 		// Official flavor text: "Chi la usa spara da due a cinque raffiche di semi contro il bersaglio in successione."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Colpisce da due a cinque volte. Ha il 35% di possibilità di colpire due o tre volte e il 15% di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi. Se l'utilizzatore ha l'abilità Abillegame, questa mossa colpisce sempre cinque volte. Se l'utilizzatore tiene un Dado truccato, questa mossa colpisce 4-5 volte.", // NEEDS CHECK
+		shortDesc: "Colpisce 2-5 volte in un turno.", // NEEDS CHECK
 		gen8: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Colpisce da due a cinque volte. Ha il 35% di possibilità di colpire due o tre volte e il 15% di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi. Se l'utilizzatore ha l'abilità Abillegame, questa mossa colpisce sempre cinque volte.", // NEEDS CHECK
 		},
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Colpisce da due a cinque volte. Ha una possibilità di 3/8 di colpire due o tre volte e una di 1/8 di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi. Se l'utilizzatore ha l'abilità Abillegame, questa mossa colpisce sempre cinque volte. Se il bersaglio tiene un Focalnastro e ha tutti i PS quando questa mossa viene usata, non verrà mandato KO a prescindere dal numero di colpi.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Colpisce da due a cinque volte. Ha una possibilità di 3/8 di colpire due o tre volte e una di 1/8 di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi.", // NEEDS CHECK
 		},
 	},
 	burningbulwark: {
 		name: "Egida Ignea",
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "L'utilizzatore è protetto dalla maggior parte degli attacchi scagliati da altri Pokémon durante questo turno; i Pokémon che lo attaccano con mosse da contatto vengono scottati. Le mosse di stato ignorano questa protezione. Questa mossa ha 1/X probabilità di avere successo, dove X comincia con valore 1 e triplica ogni volta che la mossa viene usata. X ritorna a 1 se la mossa fallisce o l'ultima mossa usata dall'utilizzatore non è stata Agodifesa, Anticipo, Bodyguard, Dynabarriera, Egida Ignea, Fortino, Individua, Protezione, Resistenza, Sbarramento, Scudo Reale, Telatrappola o se è stata una delle mosse menzionate e l'avversario ha rotto la protezione. Fallisce se l'utilizzatore si muove per ultimo durante questo turno.", // NEEDS CHECK
+		shortDesc: "Protegge dalle mosse offensive. Contatto: Scottatura.", // NEEDS CHECK
 	},
 	burningjealousy: {
 		name: "Fiamminvidia",
 		// Official flavor text: "Chi la usa attacca con la forza dell’invidia, causando una scottatura a tutti i Pokémon le cui statistiche sono aumentate durante quel turno."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 100% di scottare i bersagli se hanno ricevuto un aumento di statistiche durante questo turno.", // NEEDS CHECK
+		shortDesc: "Scotta i bersagli che si sono appena potenziati.", // NEEDS CHECK
 	},
 	burnup: {
 		name: "Ultima Fiamma",
 		// Official flavor text: "Chi la usa attacca sfruttando tutta la sua potenza incendiaria per infliggere gravi danni al bersaglio, ma come conseguenza perde il tipo Fuoco."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Fallisce a meno che l'utilizzatore non sia di tipo Fuoco. Se questa mossa ha successo e l'utilizzatore non sta facendo uso del fenomeno Teracristal, il tipo Fuoco dell'utilizzatore viene perso finché resta in campo.", // NEEDS CHECK
+		shortDesc: "L'utilizzatore perde il tipo Fuoco; deve essere Fuoco.", // NEEDS CHECK
 		gen8: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Fallisce a meno che l'utilizzatore non sia di tipo Fuoco. Se questa mossa ha successo il tipo Fuoco dell'utilizzatore viene perso finché resta in campo.", // NEEDS CHECK
 		},
 
 		typeChange: "  Le fiamme di {POKEMON} si sono spente!",
@@ -903,68 +904,68 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	buzzybuzz: {
 		name: "Elettrozap",
 		// Official flavor text: "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 100% di paralizzare il bersaglio.", // NEEDS CHECK
+		shortDesc: "Paralizza il bersaglio.", // NEEDS CHECK
 	},
 	calmmind: {
 		name: "Calmamente",
 		// Official flavor text: "Chi la usa placa il proprio spirito meditando per aumentare l’Attacco Speciale e la Difesa Speciale."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Aumenta l'Attacco Speciale e la Difesa Speciale dell'utilizzatore di 1 stadio.", // NEEDS CHECK
+		shortDesc: "Aumenta ASp e DSp dell'utilizzatore di 1 stadio.", // NEEDS CHECK
 	},
 	camouflage: {
 		name: "Camuffamento",
 		// Official flavor text: "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "L'utilizzatore cambia tipo in base al campo attivo. Normale per il terreno standard delle lotte Wi-Fi, Elettro con il Campo Elettrico, Folletto con il Campo Nebbioso, Erba con il Campo Erboso e Psico con il Campo Psichico. Fallisce se il tipo dell'utilizzatore non può essere cambiato o se l'utilizzatore è già di quel tipo puro", // NEEDS CHECK
+		shortDesc: "Cambia il tipo dell'utilizzatore in base al campo.", // NEEDS CHECK
 		gen6: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore cambia tipo in base al campo attivo. Normale per il terreno standard delle lotte Wi-Fi, Elettro con il Campo Elettrico, Folletto con il Campo Nebbioso ed Erba con il Campo Erboso. Fallisce se il tipo dell'utilizzatore non può essere cambiato o se l'utilizzatore è già di quel tipo puro", // NEEDS CHECK
 		},
 		gen5: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore cambia tipo in base al terreno di gioco. Terra per il terreno standard delle lotte Wi-Fi. Fallisce se il tipo dell'utilizzatore non può essere cambiato o se è già di quel tipo puro.", // NEEDS CHECK
+			shortDesc: "Cambia il tipo dell'utilizzatore in tipo Terra.", // NEEDS CHECK
 		},
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore cambia tipo in base al terreno di gioco. Normale per il terreno standard delle lotte Wi-Fi. Fallisce se l'utilizzatore ha l'abilità Multitipo o se è già in parte Normale.", // NEEDS CHECK
+			shortDesc: "Cambia il tipo dell'utilizzatore in tipo Normale.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore cambia tipo in base al terreno di gioco. Normale per il terreno standard delle lotte Wi-Fi. Fallisce se l'utilizzatore è già in parte Normale.", // NEEDS CHECK
 		},
 	},
 	captivate: {
 		name: "Incanto",
 		// Official flavor text: "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Riduce l'Attacco Speciale dei bersagli di 2 stadi. I singoli bersagli sono immuni se dello stesso genere dell'utilizzatore o se uno dei due è di genere neutro. I Pokémon con l'abilità Indifferenza sono immuni a questa mossa.", // NEEDS CHECK
+		shortDesc: "-2 ASp ai nemici di genere opposto.", // NEEDS CHECK
 	},
 	catastropika: {
 		name: "Super Pikaboom",
-		shortDesc: null, // NEEDS TRANSLATION
+		shortDesc: "Nessun effetto aggiuntivo.", // NEEDS CHECK
 	},
 	ceaselessedge: {
 		name: "Lama Milleflutti",
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Se questa mossa ha successo, piazza una trappola sul terreno avversario che danneggia ogni Pokémon appena entra in campo, a meno che non siano di tipo Volante o abbiano l'abilità Levitazione. È possibile piazzare un massimo di tre strati e gli avversari perdono 1/8 dei loro PS massimi con uno strato, 1/6 con due strati e 1/4 con tre strati, tutti arrotondati per difetto. Le trappole possono essere rimosse dal terreno avversario se qualunque Pokémon usa Pulizie, se un Pokémon avversario usa con successo Glitturbine, Rapigiro o Scacciabruma o se un Pokémon avversario viene colpito da Scacciabruma.", // NEEDS CHECK
+		shortDesc: "Piazza uno strato di Punte sul terreno avversario.", // NEEDS CHECK
 	},
 	celebrate: {
 		name: "Auguri",
-		shortDesc: null, // NEEDS TRANSLATION
+		shortDesc: "Nessun utilizzo competitivo.", // NEEDS CHECK
 
 		activate: "  Auguri, {TRAINER}!",
 	},
 	charge: {
 		name: "Sottocarica",
 		// Official flavor text: "Potenzia la mossa di tipo Elettro usata subito dopo. Aumenta anche la Difesa Speciale di chi la usa."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Aumenta la Difesa Speciale dell'utilizzatore di 1 stadio. Il prossimo attacco Elettro dell'utilizzatore avrà potenza raddoppiata; l'effetto termina se l'utilizzatore lascia il campo o se tenta di usare qualsiasi mossa Elettro diversa da Sottocarica, anche se fallisce.", // NEEDS CHECK
+		shortDesc: "+1 DSp. Il prossimo attacco Elettro fa danni doppi.", // NEEDS CHECK
 		gen8: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Aumenta la Difesa Speciale dell'utilizzatore di 1 stadio. Se nel turno successivo l'utilizzatore usa un attacco Elettro, la sua potenza viene raddoppiata.", // NEEDS CHECK
+			shortDesc: "+1 DSp. Danni Elettro doppi il prossimo turno.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Se nel turno successivo l'utilizzatore usa un attacco Elettro, la sua potenza viene raddoppiata.", // NEEDS CHECK
+			shortDesc: "Danni Elettro doppi il prossimo turno.", // NEEDS CHECK
 		},
 
 		start: "  {POKEMON} si carica di elettricità!",
@@ -972,82 +973,82 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	chargebeam: {
 		name: "Raggioscossa",
 		// Official flavor text: "Chi la usa lancia un fascio di elettricità molto intensa. Può anche aumentare il suo Attacco Speciale."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 70% di aumentare l'Attacco Speciale dell'utilizzatore di 1 stadio.", // NEEDS CHECK
+		shortDesc: "70% di aumentare l'ASp dell'utilizzatore di 1 stadio.", // NEEDS CHECK
 	},
 	charm: {
 		name: "Fascino",
 		// Official flavor text: "Ammalia il bersaglio con lo sguardo per renderlo meno cauto. Ne riduce molto l’Attacco."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Riduce l'Attacco del bersaglio di 2 stadi.", // NEEDS CHECK
+		shortDesc: "Riduce l'Att del bersaglio di 2 stadi.", // NEEDS CHECK
 	},
 	chatter: {
 		name: "Schiamazzo",
 		// Official flavor text: "Chi la usa attacca creando un’onda sonora di parole a vanvera e confonde il bersaglio."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 100% di confondere il bersaglio.", // NEEDS CHECK
+		shortDesc: "Confonde il bersaglio.", // NEEDS CHECK
 		gen5: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Possibilità X% di confondere il bersaglio, dove X è 0 a meno che l'utilizzatore non sia Chatot che non ha usato Trasformazione. Se l'utilizzatore è Chatot, X è 0 o 10 in base al volume del verso registrato per Chatot. 0 per una registrazione dal volume basso o senza registrazione, 10 per una registrazione dal volume medio o alto.", // NEEDS CHECK
+			shortDesc: "Per Chatot, 10% di confondere il bersaglio.", // NEEDS CHECK
 		},
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Possibilità X% di confondere il bersaglio, dove X è 0 a meno che l'utilizzatore non sia Chatot che non ha usato Trasformazione. Se l'utilizzatore è Chatot, X è 1, 11 o 31 in base al volume del verso registrato per Chatot. 1 per una registrazione dal volume basso o senza registrazione, 11 per una registrazione dal volume medio e 31 per una registrazione dal volume alto.", // NEEDS CHECK
+			shortDesc: "Per Chatot, 31% di confondere il bersaglio.", // NEEDS CHECK
 		},
 	},
 	chillingwater: {
 		name: "Doccia Fredda",
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 100% di ridurre l'Attacco del bersaglio di 1 stadio.", // NEEDS CHECK
+		shortDesc: "Riduce l'Att del bersaglio di 1 stadio.", // NEEDS CHECK
 	},
 	chillyreception: {
 		name: "Freddura",
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "la condizione atmosferica diventa neve per 5 turni. L'utilizzatore esce dal campo anche se imprigionato e viene rimpiazzato immediatamente da un membro della squadra scelto. L'utilizzatore non esce dal campo se non ci sono altri alleati in salute nella squadra.", // NEEDS CHECK
+		shortDesc: "Evoca la neve, l'utilizzatore esce dal campo.", // NEEDS CHECK
 
 		prepare: "  {POKEMON} sta per fare una battuta!",
 	},
 	chipaway: {
 		name: "Insidia",
 		// Official flavor text: "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Ignora le modifiche alle statistiche del bersaglio, inclusa l'elusione.", // NEEDS CHECK
+		shortDesc: "Ignora le modifiche alle statistiche del bersaglio.", // NEEDS CHECK
 	},
 	chloroblast: {
 		name: "Clorofillaser",
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Se questa mossa ha successo, l'utilizzatore perde metà dei suoi PS massimi arrotondati per eccesso, a meno che l'utilizzatore non abbia l'abilità Magicscudo o Testadura.", // NEEDS CHECK
+		shortDesc: "L'utilizzatore perde 50% dei PS massimi.", // NEEDS CHECK
 	},
 	circlethrow: {
 		name: "Ribaltiro",
 		// Official flavor text: "Il bersaglio è scaraventato via ed è costretto a lasciare il posto a un altro. Mette fine alle lotte contro singoli Pokémon selvatici."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Se entrambi l'utilizzatore e il bersaglio non sono andato KO, il bersaglio viene costretto a uscire dal campo in favore di un suo alleato casuale. Questo effetto fallisce se il bersaglio è sotto l'effetto di Radicamento, ha l'abilità Ventose o se questa mossa colpisce un Sostituto.", // NEEDS CHECK
+		shortDesc: "Forza in campo un avversario casuale.", // NEEDS CHECK
 	},
 	clamp: {
 		name: "Tenaglia",
 		// Official flavor text: "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Impedisce al bersaglio di essere ritirato per quattro o cinque turni (sette turni con Presartigli). Infligge danni pari a 1/8 dei PS massimi del bersaglio (1/6 con la Legafascia), arrotondati per difetto, alla fine di ogni turno durante il suo effetto. Il bersaglio può comunque ritirarsi se tiene un Disfoguscio o se usa Freddura, Invertivolt, Monito, Retromarcia, Staffetta, Tagliacoda, Teletrasporto o Virata. L'effetto termina se l'utilizzatore o il bersaglio lasciano il campo o se il bersaglio usa Glitturbine, Rapigiro o Sostituto con successo. Questo effetto non è cumulabile e non viene sovrascritto usando di nuovo questa mossa o un'altra mossa imprigionante.", // NEEDS CHECK
+		shortDesc: "Imprigiona e danneggia il bersaglio per 4-5 turni.", // NEEDS CHECK
 		gen8: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Impedisce al bersaglio di essere ritirato per 4-5 turni (7 turni con Presartigli). Infligge danni pari a 1/8 dei PS massimi del bersaglio (1/6 con la Legafascia), arrotondati per difetto, alla fine di ogni turno durante il suo effetto. Il bersaglio può comunque ritirarsi se tiene un Disfoguscio o se usa Invertivolt, Monito, Retromarcia, Staffetta, Teletrasporto o Virata. L'effetto termina se l'utilizzatore o il bersaglio lasciano il campo o se il bersaglio usa Rapigiro o Sostituto con successo. Questo effetto non è cumulabile e non viene sovrascritto usando di nuovo questa mossa o un'altra mossa imprigionante.", // NEEDS CHECK
 		},
 		gen7: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Impedisce al bersaglio di essere ritirato per 4-5 turni (7 turni con Presartigli). Infligge danni pari a 1/8 dei PS massimi del bersaglio (1/6 con la Legafascia), arrotondati per difetto, alla fine di ogni turno durante il suo effetto. Il bersaglio può comunque ritirarsi se tiene un Disfoguscio o se usa Invertivolt, Monito, Retromarcia o Staffetta. L'effetto termina se l'utilizzatore o il bersaglio lasciano il campo o se il bersaglio usa Rapigiro o Sostituto con successo. Questo effetto non è cumulabile e non viene sovrascritto usando di nuovo questa mossa o un'altra mossa imprigionante.", // NEEDS CHECK
 		},
 		gen5: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Impedisce al bersaglio di essere ritirato per 4-5 turni (7 turni con Presartigli). Infligge danni pari a 1/16 dei PS massimi del bersaglio (1/8 con la Legafascia), arrotondati per difetto, alla fine di ogni turno durante il suo effetto. Il bersaglio può comunque ritirarsi se tiene un Disfoguscio o se usa Invertivolt, Retromarcia o Staffetta. L'effetto termina se l'utilizzatore o il bersaglio lasciano il campo o se il bersaglio usa Rapigiro o Sostituto con successo. Questo effetto non è cumulabile e non viene sovrascritto usando di nuovo questa mossa o un'altra mossa imprigionante.", // NEEDS CHECK
 		},
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Impedisce al bersaglio di essere ritirato per 2-5 turni (sempre 5 turni con Presartigli). Infligge danni pari a 1/16 dei PS massimi del bersaglio, arrotondati per difetto, alla fine di ogni turno durante il suo effetto. Il bersaglio può comunque ritirarsi se tiene un Disfoguscio o se usa Retromarcia o Staffetta. L'effetto termina se l'utilizzatore o il bersaglio lasciano il campo o se il bersaglio usa Rapigiro o Sostituto con successo. Questo effetto non è cumulabile e non viene sovrascritto usando di nuovo questa mossa o un'altra mossa imprigionante.", // NEEDS CHECK
+			shortDesc: "Imprigiona e danneggia il bersaglio per 2-5 turni.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Impedisce al bersaglio di essere ritirato per 2-5 turni. Infligge danni pari a 1/16 dei PS massimi del bersaglio, arrotondati per difetto, alla fine di ogni turno durante il suo effetto. Il bersaglio può comunque ritirarsi se usa Staffetta. L'effetto termina se l'utilizzatore o il bersaglio lasciano il campo o se il bersaglio usa Rapigiro o Sostituto con successo. Questo effetto non è cumulabile e non viene sovrascritto usando di nuovo questa mossa o un'altra mossa imprigionante.", // NEEDS CHECK
 		},
 		gen1: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore usa questa mossa per 2-5 turni. Ha una possibilità di 3/8 di durare due o tre turni e una di 1/8 di durare quattro o cinque turni. Il danno è calcolato una volta per il primo turno e usato per ogni altro turno. L'utilizzatore non può selezionare una mossa e il bersaglio non può eseguirne alcuna durante l'effetto di questa mossa, ma entrambi possono essere ritirati dal campo. Se l'utilizzatore viene ritirato, il bersaglio resta incapace di usare una mossa durante quel turno. Se il bersaglio viene ritirato, l'utilizzatore usa automaticamente questa mossa di nuovo e, se aveva 0 PP rimasti al momento, i PP diventano 63. Se l'utilizzatore o il bersaglio vengono ritirati o se l'utilizzatore è incapace di muoversi, l'effetto di questa mossa termina. Se il bersaglio ha un'immunità di tipo contro questa mossa, non riceve danni ma resta comunque incapace di muoversi.", // NEEDS CHECK
+			shortDesc: "Impedisce al bersaglio di muoversi per 2-5 turni.", // NEEDS CHECK
 		},
 
 		start: "  {SOURCE} stritola {POKEMON} con Tenaglia!",
@@ -1056,123 +1057,123 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	clangingscales: {
 		name: "Clamorsquame",
 		// Official flavor text: "Chi la usa attacca il bersaglio con un suono fortissimo che genera sfregando le scaglie del corpo. Dopo aver attaccato, la sua Difesa diminuisce."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Riduce la Difesa dei bersagli di 1 stadio.", // NEEDS CHECK
+		shortDesc: "-1 Dif. Colpisce nemici adiacenti.", // NEEDS CHECK
 	},
 	clangoroussoul: {
 		name: "Dracofonia",
 		// Official flavor text: "Chi la usa sacrifica un po’ dei suoi PS per aumentare tutte le sue statistiche."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Aumenta Attacco, Difesa, Attacco Speciale, Difesa Speciale e Velocità dell'utilizzatore di 1 stadio in cambio del 33% dei PS massimi, arrotondati per difetto. Fallisce se l'utilizzatore andrebbe KO o se le sue statistiche rimarrebbero invariate.", // NEEDS CHECK
+		shortDesc: "-33% PS, +1 a tutte le statistiche.", // NEEDS CHECK
 	},
 	clangoroussoulblaze: {
 		name: "Dracofonia Divampante",
 		// Official flavor text: "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Aumenta Attacco, Difesa, Attacco Speciale, Difesa Speciale e Velocità dell'utilizzatore di 1 stadio.", // NEEDS CHECK
+		shortDesc: "Aumenta Att, Dif, ASp, DSp e Vel di 1 stadio.", // NEEDS CHECK
 	},
 	clearsmog: {
 		name: "Pulifumo",
-		shortDesc: null, // NEEDS TRANSLATION
+		shortDesc: "Azzera le modifiche alle statistiche del bersaglio.", // NEEDS CHECK
 	},
 	closecombat: {
 		name: "Zuffa",
 		// Official flavor text: "Chi la usa attacca abbassando la guardia. La propria Difesa e la Difesa Speciale si riducono."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Riduce Difesa e Difesa Speciale dell'utilizzatore di 1 stadio.", // NEEDS CHECK
+		shortDesc: "Riduce Dif e DSp dell'utilizzatore di 1 stadio.", // NEEDS CHECK
 	},
 	coaching: {
 		name: "Coaching",
 		// Official flavor text: "Chi la usa aumenta l’Attacco e la Difesa di tutti gli alleati dando loro indicazioni precise."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Aumenta Attacco e Difesa del bersaglio di 1 stadio. Fallisce se non ci sono alleati adiacenti all'utilizzatore.", // NEEDS CHECK
+		shortDesc: "Aumenta Att e Dif di un alleato di 1 stadio.", // NEEDS CHECK
 	},
 	coil: {
 		name: "Arrotola",
 		// Official flavor text: "Chi la usa si concentra aumentando Attacco, Difesa e precisione."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Aumenta Attacco, Difesa e precisione dell'utilizzatore di 1 stadio.", // NEEDS CHECK
+		shortDesc: "Aumenta Att, Dif e precisione di 1 stadio.", // NEEDS CHECK
 	},
 	collisioncourse: {
 		name: "Turboschianto",
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Se questa mossa è superefficace contro il bersaglio, i danni vengono moltiplicati per 1,3333.", // NEEDS CHECK
+		shortDesc: "1,3333x danni con attacchi superefficaci.", // NEEDS CHECK
 	},
 	combattorque: {
 		name: "Turborissa",
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 30% di paralizzare il bersaglio.", // NEEDS CHECK
+		shortDesc: "30% di paralizzare il bersaglio.", // NEEDS CHECK
 	},
 	cometpunch: {
 		name: "Cometapugno",
 		// Official flavor text: "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Colpisce da due a cinque volte. Ha il 35% di possibilità di colpire due o tre volte e il 15% di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi. Se l'utilizzatore ha l'abilità Abillegame, questa mossa colpisce sempre cinque volte.", // NEEDS CHECK
+		shortDesc: "Colpisce 2-5 volte in un turno.", // NEEDS CHECK
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Colpisce da due a cinque volte. Ha una possibilità di 3/8 di colpire due o tre volte e una di 1/8 di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi. Se l'utilizzatore ha l'abilità Abillegame, questa mossa colpisce sempre cinque volte. Se il bersaglio tiene un Focalnastro e ha tutti i PS quando questa mossa viene usata, non verrà mandato KO a prescindere dal numero di colpi.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Colpisce da due a cinque volte. Ha una possibilità di 3/8 di colpire due o tre volte e una di 1/8 di colpire quattro o cinque volte. Se uno dei colpi rompe il Sostituto del bersaglio, questo riceverà i danni dei colpi successivi.", // NEEDS CHECK
 		},
 		gen1: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Colpisce da due a cinque volte. Ha una possibilità di 3/8 di colpire due o tre volte e una di 1/8 di colpire quattro o cinque volte. Il danno è calcolato una volta per il primo colpo e usato per ogni altro colpo. Se uno dei colpi rompe il Sostituto del bersaglio, la mossa si interrompe.", // NEEDS CHECK
 		},
 	},
 	comeuppance: {
 		name: "Ritorsione",
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Mira all'ultimo Pokémon che ha colpito l'utilizzatore con un attacco fisico o speciale durante questo turno, infliggendoli 1,5x i danni ricevuti da quell'attacco, arrotondati per difetto. Se l'utilizzatore non ha perso PS dall'attacco subito, questa mossa infligge 1 PS di danno. Se la posizione del Pokémon che ha attaccato l'utilizzatore è vuota e c'è un altro avversario in campo, questa mossa viene ridirezionata su quell'avversario. Solo l'ultimo colpo delle mosse multicolpo viene considerato per il calcolo dei danni. Questa mossa fallisce se l'utilizzatore non è stato colpito da un attacco fisico o speciale di un avversario durante questo turno.", // NEEDS CHECK
+		shortDesc: "Se colpito, restituisce 1,5x i danni.", // NEEDS CHECK
 	},
 	confide: {
 		name: "Confidenza",
 		// Official flavor text: "Chi la usa svela dei segreti al bersaglio, distraendolo e riducendone l’Attacco Speciale."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Riduce l'Attacco Speciale del bersaglio di 1 stadio.", // NEEDS CHECK
+		shortDesc: "Riduce l'ASp del bersaglio di 1 stadio.", // NEEDS CHECK
 	},
 	confuseray: {
 		name: "Stordiraggio",
 		// Official flavor text: "Colpisce il bersaglio con un raggio funesto che lo confonde."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Causa confusione al bersaglio.", // NEEDS CHECK
+		shortDesc: "Confonde il bersaglio.", // NEEDS CHECK
 	},
 	confusion: {
 		name: "Confusione",
 		// Official flavor text: "Colpisce il bersaglio con una leggera forza telecinetica e può anche confonderlo."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 10% di confondere il bersaglio.", // NEEDS CHECK
+		shortDesc: "10% di confondere il bersaglio.", // NEEDS CHECK
 	},
 	constrict: {
 		name: "Limitazione",
 		// Official flavor text: "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 10% di ridurre la Velocità del bersaglio di 1 stadio.", // NEEDS CHECK
+		shortDesc: "10% di ridurre la Vel del bersaglio di 1 stadio.", // NEEDS CHECK
 		gen1: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Possibilità del 33% di ridurre la Velocità del bersaglio di 1 stadio.", // NEEDS CHECK
+			shortDesc: "33% di ridurre la Vel del bersaglio di 1 stadio.", // NEEDS CHECK
 		},
 	},
 	continentalcrush: {
 		name: "Gigamacigno Polverizzante",
-		shortDesc: null, // NEEDS TRANSLATION
+		shortDesc: "Potenza influenzata dalla mossa di partenza.", // NEEDS CHECK
 	},
 	conversion: {
 		name: "Conversione",
 		// Official flavor text: "Il tipo di chi la usa muta in quello della prima mossa nella lista delle sue mosse."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "L'utilizzatore cambia il proprio tipo a quello della mossa nel suo primo slot. Fallisce se l'utilizzatore non può cambiare il proprio tipo o se è già in parte dello stesso tipo della sua prima mossa.", // NEEDS CHECK
+		shortDesc: "L'utilizzatore passa al tipo della sua prima mossa.", // NEEDS CHECK
 		gen5: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore cambia il proprio tipo a quello di una delle mosse da lui conosciute a caso diverse da questa mossa e di tipi diversi dal tipo corrente dell'utilizzatore. Fallisce se l'utilizzatore non può cambiare il proprio tipo o se l'unico tipo a cui potrebbe cambiare è il suo tipo corrente.", // NEEDS CHECK
+			shortDesc: "L'utilizzatore passa al tipo di una delle sue mosse.", // NEEDS CHECK
 		},
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore cambia il proprio tipo a quello di una delle mosse da lui conosciute a caso diverse da questa mossa, da Maledizione e di tipi diversi dal tipo corrente dell'utilizzatore. Fallisce se l'utilizzatore non può cambiare il proprio tipo o se l'unico tipo a cui potrebbe cambiare è il suo tipo corrente.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore cambia il proprio tipo a quello di una delle mosse da lui conosciute a caso diverse da Maledizione e di tipi diversi dal tipo corrente dell'utilizzatore. Fallisce se l'utilizzatore non può cambiare il proprio tipo o se l'unico tipo a cui potrebbe cambiare è il suo tipo corrente.", // NEEDS CHECK
 		},
 		gen1: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore cambia il proprio tipo per copiare i tipi del bersaglio.", // NEEDS CHECK
+			shortDesc: "L'utilizzatore passa al tipo del bersaglio.", // NEEDS CHECK
 		},
 
 		typeChange: "  Passa al tipo di {SOURCE}",
@@ -1180,64 +1181,64 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	conversion2: {
 		name: "Conversione2",
 		// Official flavor text: "Chi la usa cambia tipo per rendersi resistente al tipo dell’ultima mossa usata dal bersaglio."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "L'utilizzatore cambia il proprio tipo a uno resistente o immune all'ultima mossa usata dal bersaglio, ma non di uno dei suoi tipi correnti. Viene considerato il tipo effettivo della mossa piuttosto che il suo tipo originale. Fallisce se il bersaglio non ha mai attaccato, se l'utilizzatore non può cambiare il proprio tipo o se questa mosse cambierebbe il tipo dell'utilizzatore in uno dei suoi tipi correnti.", // NEEDS CHECK
+		shortDesc: "Cambio di tipo per resistere l'ultima mossa usata.", // NEEDS CHECK
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore cambia il proprio tipo a uno resistente o immune all'ultima mossa subita se ha avuto successo e se non corrisponde a uno dei suoi tipi correnti. Viene considerato il tipo effettivo della mossa piuttosto che il suo tipo originale. Fallisce se l'ultima mossa usata contro l'utilizzatore non ha avuto successo, se l'utilizzatore ha l'abilità Multitipo o se questa mossa può solo cambiare il tipo dell'utilizzatora a uno dei suoi tipi correnti.", // NEEDS CHECK
+			shortDesc: "Cambio di tipo per resistere l'ultima mossa subita.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore cambia il proprio tipo a uno resistente o immune all'ultima mossa subita se ha avuto successo e se non corrisponde a uno dei suoi tipi correnti. Viene considerato il tipo effettivo della mossa piuttosto che il suo tipo originale. Scontro viene considerata di tipo Normale. Fallisce se l'ultima mossa usata contro l'utilizzatore non ha avuto successo, se l'utilizzatore ha l'abilità Multitipo o se questa mossa può solo cambiare il tipo dell'utilizzatora a uno dei suoi tipi correnti.", // NEEDS CHECK
 		},
 		gen2: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore cambia il proprio tipo a uno resistente o immune all'ultima mossa usata dall'avversario, anche se corrisponde a uno dei suoi tipi correnti. Viene considerato il tipo originale della mossa piuttosto che il suo tipo effettivo. Fallisce se l'avversario non ha usato alcuna mossa.", // NEEDS CHECK
+			shortDesc: "Cambio di tipo per resistere l'ultima mossa usata", // NEEDS CHECK
 		},
 	},
 	copycat: {
 		name: "Copione",
 		// Official flavor text: "Chi la usa mima l’ultima mossa eseguita. Fallisce se non è stata ancora usata alcuna mossa."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "L'utilizzatore usa l'ultima mossa usata da qualunque Pokémon, incluso sé stesso. Fallisce se nessuna mossa è ancora stata usata o se l'ultima mossa usata è Agodifesa, Altruismo, Assistente, Auguri, Boato, Cannonbecco, Cannone Dynamax, Cediregalo, Centripugno, Codadrago, Colpo Maestoso, Contrattacco, Copione, Destinobbligato, Fintattacco, Fortino, Furto, Gusciotrappola, Individua, Mano nella Mano, Metronomo, Mimica, Naturforza, Polverabbia, Precedenza, Protezione, Raggiro, Rapidscambio, Resistenza, Ribaltappeto, Ribaltiro, Riflettore, Rutto, Schiamazzo, Schizzo, Scippo, Scontro, Scudo Reale, Sonnolalia, Sonoqui, Specchiovelo, Speculmossa, Supplica, Taglio Maestoso, Teracluster, Trasformazione, Turbine, Turboincanto, Turborissa, Turbotenebra, Turbotossina o Turboustione.", // NEEDS CHECK
+		shortDesc: "Copia l'ultima mossa usata.", // NEEDS CHECK
 		gen8: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore usa l'ultima mossa usata da qualunque Pokémon, incluso sé stesso. Vengono considerate le versioni base delle mosse Dynamax e Gigamax. Fallisce se nessuna mossa è ancora stata usata o se l'ultima mossa usata è Agodifesa, Altruismo, Assistente, Auguri, Boato, Cannonbecco, Cannone Dynamax, Cediregalo, Centripugno, Codadrago, Colpo Maestoso, Contrattacco, Copione, Destinobbligato, Fintattacco, Fortino, Furto, Gusciotrappola, Individua, Mano nella Mano, Metronomo, Mimica, Naturforza, Polverabbia, Precedenza, Protezione, Raggiro, Rapidscambio, Resistenza, Ribaltappeto, Ribaltiro, Riflettore, Rutto, Schiamazzo, Schizzo, Scippo, Scontro, Scudo Reale, Sonnolalia, Sonoqui, Specchiovelo, Speculmossa, Supplica, Taglio Maestoso, Trasformazione o Turbine", // NEEDS CHECK
 		},
 		gen7: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore usa l'ultima mossa usata da qualunque Pokémon, incluso sé stesso. Fallisce se nessuna mossa è ancora stata usata o se l'ultima mossa usata è Agodifesa, Altruismo, Assistente, Auguri, Boato, Cannonbecco, Cediregalo, Centripugno, Codadrago, Contrattacco, Copione, Destinobbligato, Fintattacco, Fortino, Furto, Gusciotrappola, Individua, Mano nella Mano, Metronomo, Mimica, Naturforza, Polverabbia, Precedenza, Protezione, Raggiro, Rapidscambio, Resistenza, Ribaltappeto, Ribaltiro, Riflettore, Rutto, Schiamazzo, Schizzo, Scippo, Scontro, Scudo Reale, Sonnolalia, Sonoqui, Specchiovelo, Speculmossa, Supplica, Trasformazione, Turbine o qualsiasi mossa z.", // NEEDS CHECK
 		},
 		gen6: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore usa l'ultima mossa usata da qualunque Pokémon, incluso sé stesso. Fallisce se nessuna mossa è ancora stata usata o se l'ultima mossa usata è Agodifesa, Altruismo, Assistente, Auguri, Boato, Cediregalo, Centripugno, Codadrago, Contrattacco, Copione, Destinobbligato, Fintattacco, Furto, Individua, Mano nella Mano, Metronomo, Mimica, Naturforza, Polverabbia, Precedenza, Protezione, Raggiro, Rapidscambio, Resistenza, Ribaltappeto, Ribaltiro, Rutto, Schiamazzo, Schizzo, Scippo, Scontro, Scudo Reale, Sonnolalia, Sonoqui, Specchiovelo, Speculmossa, Supplica, Trasformazione o Turbine.", // NEEDS CHECK
 		},
 		gen5: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore usa l'ultima mossa usata da qualunque Pokémon, incluso sé stesso. Fallisce se nessuna mossa è ancora stata usata o se l'ultima mossa usata è Altruismo, Assistente, Cediregalo, Centripugno, Codadrago, Contrattacco, Copione, Destinobbligato, Fintattacco, Furto, Individua, Metronomo, Mimica, Naturforza, Polverabbia, Precedenza, Protezione, Raggiro, Rapidscambio, Resistenza, Ribaltiro, Schiamazzo, Schizzo, Scippo, Scontro, Sonnolalia, Sonoqui, Specchiovelo, Speculmossa, Supplica o Trasformazione.", // NEEDS CHECK
 		},
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore usa l'ultima mossa usata da qualunque Pokémon, incluso sé stesso. Fallisce se nessuna mossa è ancora stata usata o se l'ultima mossa usata è Altruismo, Assistente, Centripugno, Contrattacco, Copione, Destinobbligato, Fintattacco, Furto, Individua, Metronomo, Mimica, Precedenza, Protezione, Raggiro, Rapidscambio, Resistenza, Schiamazzo, Schizzo, Scippo, Scontro, Sonnolalia, Sonoqui, Specchiovelo, Speculmossa o Supplica.", // NEEDS CHECK
 		},
 	},
 	coreenforcer: {
 		name: "Nucleocastigo",
 		// Official flavor text: "Il bersaglio subisce dei danni e, se ha già agito nel turno, perde la sua abilità."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Se l'utilizzatore si muove dopo il bersaglio, l'abilità del bersaglio viene resa inefficace fintanto che rimane in campo. Se il bersaglio usa Staffetta, l'alleato che lo sostituisce continuerà a subire di questo effetto. Se l'abilità del bersaglio è Accendilotta, Banco, Fantasmanto, Gelofaccia, Inghiottimissile, Morfosintonia, Multitipo, Sciamefusione, Scudosoglia, Sintonia Equina, Sistema Primevo, Sonno Assoluto, Stato Zen, Supercambio o Teramorfosi, questo effetto non avviene e riceverlo tramite Staffetta lo farà terminare immediatamente.", // NEEDS CHECK
+		shortDesc: "Nullifica le abilità dei bersagli se hanno già agito.", // NEEDS CHECK
 		gen8: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Se l'utilizzatore si muove dopo il bersaglio, l'abilità del bersaglio viene resa inefficace fintanto che rimane in campo. Se il bersaglio usa Staffetta, l'alleato che lo sostituisce continuerà a subire di questo effetto. Se l'abilità del bersaglio è Accendilotta, Banco, Fantasmanto, Gelofaccia, Inghiottimissile, Morfosintonia, Multitipo, Sciamefusione, Scudosoglia, Sintonia Equina, Sistema Primevo, Sonno Assoluto o Stato Zen, questo effetto non avviene e riceverlo tramite Staffetta lo farà terminare immediatamente.", // NEEDS CHECK
 		},
 		gen7: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Se l'utilizzatore si muove dopo il bersaglio, l'abilità del bersaglio viene resa inefficace fintanto che rimane in campo. Se il bersaglio usa Staffetta, l'alleato che lo sostituisce continuerà a subire di questo effetto. Se l'abilità del bersaglio è Accendilotta, Banco, Fantasmanto, Morfosintonia, Multitipo, Sciamefusione, Scudosoglia, Sistema Primevo, Sonno Assoluto o Stato Zen, questo effetto non avviene e riceverlo tramite Staffetta lo farà terminare immediatamente.", // NEEDS CHECK
 		},
 	},
 	corkscrewcrash: {
 		name: "Spirale Perforante",
-		shortDesc: null, // NEEDS TRANSLATION
+		shortDesc: "Potenza influenzata dalla mossa di partenza.", // NEEDS CHECK
 	},
 	corrosivegas: {
 		name: "Gas Corrosivo",
 		// Official flavor text: "Chi la usa avvolge tutti i Pokémon che ha intorno in un gas altamente acido, dissolvendo i loro strumenti."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "I bersagli perdono i propri strumenti. Questa mossa non può rimuovere lo strumento a un Pokémon con l'abilità Ventose o a Kyogre, Groudon, Dialga, Palkia, Giratina, Arceus, Genesect, Silvally, Zacian, Zamazenta, Pokémon paradosso o Ogerpon che tengono rispettivamente Gemma blu, Gemma rossa, Adamasferoide, Splendisferoide, Grigiosferoide, una Lastra, un Modulo, una ROM, Spada rovinata, Scudo rovinato, Capsula energetica o una Maschera. In questo caso, la categoria Pokémon paradosso include tutte le specie con le abilità Paleoattivazione o Carica Quark eccetto Vampeaguzze, Furiatonante, Massoferreo e Capoferreo. Gli strumenti persi in questo modo non possono essere recuperati con Riciclo o Coglibacche.", // NEEDS CHECK
+		shortDesc: "Rimuove gli strumenti dei Pokémon adiacenti.", // NEEDS CHECK
 		gen8: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "I bersagli perdono i propri strumenti. Questa mossa non può rimuovere lo strumento a un Pokémon con l'abilità Ventose o a Kyogre, Groudon, Giratina, Arceus, Genesect, Silvally, Zacian o Zamazenta che tengono rispettivamente Gemma blu, Gemma rossa, Grigiosfera, una Lastra, un Modulo, una ROM, Spada rovinata o Scudo rovinato. Gli strumenti persi in questo modo non possono essere recuperati con Riciclo o Coglibacche.", // NEEDS CHECK
 		},
 
 		fail: "#healblock",
@@ -1246,89 +1247,89 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	cosmicpower: {
 		name: "Cosmoforza",
 		// Official flavor text: "Chi la usa assorbe una forza mistica dallo spazio che aumenta la Difesa e la Difesa Speciale."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Aumenta Difesa e Difesa Speciale dell'utilizzatore di 1 stadio.", // NEEDS CHECK
+		shortDesc: "Aumenta Dif e DSp dell'utilizzatore di 1 stadio.", // NEEDS CHECK
 	},
 	cottonguard: {
 		name: "Cotonscudo",
 		// Official flavor text: "Chi la usa avvolge il proprio corpo con del cotone molto morbido, proteggendosi e aumentando moltissimo la propria Difesa."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Aumenta la Difesa dell'utilizzatore di 3 stadi.", // NEEDS CHECK
+		shortDesc: "Aumenta la Dif dell'utilizzatore di 3 stadi.", // NEEDS CHECK
 	},
 	cottonspore: {
 		name: "Cottonspora",
 		// Official flavor text: "Rilascia spore simili al cotone che si attaccano ai nemici nei paraggi e ne riducono di molto la Velocità."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Riduce le Velocità del bersaglio di 2 stadi.", // NEEDS CHECK
+		shortDesc: "Riduce la Vel del bersaglio di 2 stadi.", // NEEDS CHECK
 	},
 	counter: {
 		name: "Contrattacco",
 		// Official flavor text: "Mossa che contrasta ogni attacco fisico, arrecando il doppio del danno ricevuto."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Attacca l'ultimo Pokémon avversario che ha colpito l'utilizzatore con un attacco fisico con danno equivalente al doppio dei PS persi dall'utilizzatore da quell'attacco. Se l'utilizzatore non ha perso PS dall'attacco subito, questa mossa infligge 1 PS di danno. Se la posizione del Pokémon che ha attaccato l'utilizzatore è vuota e c'è un altro avversario in campo, questa mossa viene ridirezionata su quell'avversario. Solo l'ultimo colpo delle mosse multicolpo viene considerato per il calcolo dei danni. Questa mossa fallisce se l'utilizzatore non è stato colpito da un attacco fisico di un avversario durante questo turno.", // NEEDS CHECK
+		shortDesc: "Infligge il doppio del danno fisico subito.", // NEEDS CHECK
 		gen6: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Attacca l'ultimo Pokémon avversario che ha colpito l'utilizzatore durante questo turno con un attacco fisico con danno equivalente al doppio dei PS persi dall'utilizzatore da quell'attacco. Se l'utilizzatore non ha perso PS dall'attacco subito, questa mossa ha potenza base 1. Se la posizione del Pokémon che ha attaccato l'utilizzatore è vuota e c'è un altro avversario in campo, questa mossa viene ridirezionata su quell'avversario. Solo l'ultimo colpo delle mosse multicolpo viene considerato per il calcolo dei danni. Questa mossa fallisce se l'utilizzatore non è stato colpito da un attacco fisico di un avversario durante questo turno.", // NEEDS CHECK
 		},
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Attacca l'ultimo Pokémon avversario che ha colpito l'utilizzatore durante questo turno con un attacco fisico con danno equivalente al doppio dei PS persi dall'utilizzatore da quell'attacco. Se la posizione del Pokémon che ha attaccato l'utilizzatore è vuota e c'è un altro avversario in campo, questa mossa viene ridirezionata su quell'avversario. Solo l'ultimo colpo delle mosse multicolpo viene considerato per il calcolo dei danni. Questa mossa fallisce se l'utilizzatore non è stato colpito da un attacco fisico di un avversario durante questo turno o se l'utilizzatore non ha perso PS dall'attacco.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Attacca l'ultimo Pokémon avversario che ha colpito l'utilizzatore durante questo turno con un attacco fisico con danno equivalente al doppio dei PS persi dall'utilizzatore da quell'attacco. Se la posizione del Pokémon che ha attaccato l'utilizzatore è vuota e c'è un altro avversario in campo, questa mossa viene ridirezionata su quell'avversario. Questa mossa considera Introforza come una mossa Normale. Solo l'ultimo colpo delle mosse multicolpo viene considerato per il calcolo dei danni. Questa mossa fallisce se l'utilizzatore non è stato colpito da un attacco fisico di un avversario durante questo turno o se l'utilizzatore non ha perso PS dall'attacco.", // NEEDS CHECK
 		},
 		gen2: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Attacca il Pokémon avversario con danno equivalente al doppio dei PS persi dall'utilizzatore a causa di un suo attacco fisico in questo turno. Questa mossa considera Introforza come una mossa Normale. Solo l'ultimo colpo delle mosse multicolpo viene considerato per il calcolo dei danni. Questa mossa fallisce se l'utilizzatore si muove per primo, se non è stato colpito da un attacco fisico durante questo turno o se l'utilizzatore non ha perso PS dall'attacco. Se l'avversario ha usato Abisso o Perforcorno e ha mancato, questa mossa infligge 65535 danni.", // NEEDS CHECK
 		},
 		gen1: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Attacca il Pokémon avversario con danno equivalente al doppio dei PS persi a causa dell'ultima mossa usata battaglia. Questa mossa ignora le immunità di tipo. Questa mossa fallisce se l'utilizzatore si muove per primo, se l'ultima mossa di un Pokémon avversario è stata Contatore, aveva 0 potenza base o non è stata di tipo Normale o Lotta. Fallisce se l'ultima mossa usata da qualunque Pokémon ha inflitto 0 danni e non è stata Conversione, Covauova, Focalenergia, Mimica, Nebbia, Nube, Paralizzante, Parassiseme, Riflesso, Riposo, Ripresa, Schermoluce, Sguardo Feroce, Sostituto, Splash, Stordiraggio, Supersuono, Teletrasporto, Tossina, Trasformazione, Tuononda, Velenogas o Velenpolvere.", // NEEDS CHECK
+			shortDesc: "Se colpito da un attacco fisico, ritorna danni doppi.", // NEEDS CHECK
 		},
 	},
 	courtchange: {
 		name: "Cambiocampo",
 		// Official flavor text: "Una forza misteriosa inverte gli effetti attivi sul campo alleato e sul campo avversario."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Scambia gli effetti di Nebbia, Schermoluce, Riflesso, Punte, Salvaguardia, Ventoincoda, Fielepunte, Levitoroccia, Acquapatto, Fiammapatto, Erbapatto, Rete Vischiosa, Velaurora, Gigaferroaculei, Gigacannonata, Gigasferzata, e Gigavampa tra il lato del campo dell'utilizzatore e quello dell'avversario.", // NEEDS CHECK
+		shortDesc: "Scambia gli effetti sul terreno con l'avversario.", // NEEDS CHECK
 
 		activate: "  {POKEMON} ha invertito gli effetti attivi nelle due metà del campo!",
 	},
 	covet: {
 		name: "Supplica",
 		// Official flavor text: "Chi la usa attacca il bersaglio sorridendo e gli ruba lo strumento."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Se questo attacco ha successo e l'utilizzatore non è andato KO, ruba lo strumento del bersaglio se l'utilizzatore non ne tiene uno. I Pokémon con l'abilità Ventose non possono perdere il loro strumento a meno che non venga mandato KO. Se lo strumento in questione è tra Gemma blu, Gemma rossa, Adamasferoide, Splendisferoide, Grigiosferoide, una Lastra, un Modulo, una ROM, Spada rovinata, Scudo rovinato, Capsula energetica o Machera tenuto rispettivamente da Kyogre, Groudon, Dialga, Palkia, Giratina, Arceus, Genesect, Silvally, Zacian, Zamazenta, un Pokémon paradosso o Ogerpon, o se l'utilizzatore è una delle specie menzionate con il rispettivo strumento tenuto, allora lo strumento non verrà rubato. In questo caso, la categoria Pokémon paradosso include tutte le specie con le abilità Paleoattivazione o Carica Quark eccetto Vampeaguzze, Furiatonante, Massoferreo e Capoferreo. Gli strumenti persi in questo modo non possono essere recuperati con Riciclo o Coglibacche.", // NEEDS CHECK
+		shortDesc: "Ruba lo strumento del bersaglio.", // NEEDS CHECK
 		champions: {
-			desc: null, // NEEDS TRANSLATION: not in PokeAPI
+			desc: "Se questo attacco ha successo e l'utilizzatore non ha uno strumento, ruba lo strumento del bersaglio. I Pokémon con l'abilità Ventose non possono perdere il loro strumento a meno che non venga mandato KO. Se lo strumento in questione è una Megapietra e l'utilizzatore o il bersaglio sono della specie in gradi di usare questa Megapietra per Megaevolversi, allora lo strumento non verrà rubato. Gli strumenti persi in questo modo non possono essere recuperati con Riciclo o Coglibacche.", // NEEDS CHECK: not in PokeAPI
 		},
 		gen8: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Se questo attacco ha successo e l'utilizzatore non è andato KO, ruba lo strumento del bersaglio se l'utilizzatore non ne tiene uno. I Pokémon con l'abilità Ventose non possono perdere il loro strumento a meno che non venga mandato KO. Se lo strumento in questione è tra Gemma blu, Gemma rossa, Grigiosfera, una Lastra, un Modulo, una ROM, Spada rovinata o Scudo rovinato tenuto rispettivamente da Kyogre, Groudon, Giratina, Arceus, Genesect, Silvally, Zacian o Zamazenta, o se l'utilizzatore è una delle specie menzionate con il rispettivo strumento tenuto, allora lo strumento non verrà rubato. Gli strumenti persi in questo modo non possono essere recuperati con Riciclo o Coglibacche.", // NEEDS CHECK
 		},
 		gen7: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Se questo attacco ha successo e l'utilizzatore non è andato KO, ruba lo strumento del bersaglio se l'utilizzatore non ne tiene uno. I Pokémon con l'abilità Ventose non possono perdere il loro strumento a meno che non venga mandato KO. Se lo strumento in questione è un Cristallo z, una Megapietra assegnata a una specie capace di usarla per Megaevolversi o una Gemma blu, Gemma rossa, Grigiosfera, una Lastra, un Modulo o una ROM tenuto rispettivamente da Kyogre, Groudon, Giratina, Arceus, Genesect o Silvally, o se l'utilizzatore è una delle specie menzionate con il rispettivo strumento tenuto, allora lo strumento non verrà rubato. Gli strumenti persi in questo modo non possono essere recuperati con Riciclo o Coglibacche.", // NEEDS CHECK
 		},
 		gen6: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Se questo attacco ha successo e l'utilizzatore non è andato KO, ruba lo strumento del bersaglio se l'utilizzatore non ne tiene uno. I Pokémon con l'abilità Ventose non possono perdere il loro strumento a meno che non venga mandato KO. Se lo strumento in questione è una Megapietra assegnata a una specie capace di usarla per Megaevolversi o una Gemma blu, Gemma rossa, Grigiosfera, una Lastra o un Modulo tenuto rispettivamente da Kyogre, Groudon, Giratina, Arceus o Genesect, o se l'utilizzatore è una delle specie menzionate con il rispettivo strumento tenuto, allora lo strumento non verrà rubato. Gli strumenti persi in questo modo non possono essere recuperati con Riciclo o Coglibacche.", // NEEDS CHECK
 		},
 		gen5: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Se questo attacco ha successo e l'utilizzatore non è andato KO, ruba lo strumento del bersaglio se l'utilizzatore non ne tiene uno. I Pokémon con l'abilità Ventose non possono perdere il loro strumento a meno che non venga mandato KO. Se lo strumento in questione è un messaggio una Grigiosfera, una Lastra o un Modulo tenuto rispettivamente da Giratina, Arceus o Genesect, o se l'utilizzatore è una delle specie menzionate con il rispettivo strumento tenuto, allora lo strumento non verrà rubato. Gli strumenti persi in questo modo non possono essere recuperati con Riciclo o Coglibacche.", // NEEDS CHECK
 		},
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Se questo attacco ha successo e l'utilizzatore non ha uno strumento, ruba lo strumento del bersaglio. Se lo strumento in questione è un messaggio una Grigiosfera, o se il bersaglio ha l'abilità Multitipo o Ventose, allora lo strumento non verrà rubato. Gli strumenti persi in questo modo non possono essere recuperati con Riciclo.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Se questo attacco ha successo e l'utilizzatore non ha uno strumento, ruba lo strumento del bersaglio. Se lo strumento in questione è un messaggio una Baccaenigma, o se il bersaglio ha l'abilità Ventose, allora lo strumento non verrà rubato. Gli strumenti persi in questo modo non possono essere recuperati con Riciclo.", // NEEDS CHECK
 		},
 	},
 	crabhammer: {
 		name: "Martellata",
 		// Official flavor text: "Danneggia il bersaglio servendosi di una grande tenaglia. Probabile brutto colpo."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Maggiori probabilità di infliggere un brutto colpo.", // NEEDS CHECK
+		shortDesc: "Probabile brutto colpo.", // NEEDS CHECK
 	},
 	craftyshield: {
 		name: "Truccodifesa",
 		// Official flavor text: "Grazie a un misterioso potere, protegge chi la usa e gli alleati dalle mosse di stato. È tuttavia inefficace contro mosse che infliggono danni."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "L'utilizzatore e i suoi compagni di squadra sono protetti dalle mosse di stato di altri Pokémon, alleati o avversari, durante questo turno. Fallisce se l'utilizzatore si muove per ultimo o se l'effetto di questa mossa è già attivo per la propria squadra.", // NEEDS CHECK
+		shortDesc: "Protegge gli alleati dalle mosse di stato.", // NEEDS CHECK
 
 		start: "  {TEAM} è protetto da Truccodifesa!",
 		block: "  {POKEMON} è protetto da Truccodifesa!",
@@ -1336,50 +1337,50 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	crosschop: {
 		name: "Incrocolpo",
 		// Official flavor text: "Investe il bersaglio con un colpo sferrato con entrambe le braccia incrociate. Probabile brutto colpo."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Maggiori probabilità di infliggere un brutto colpo.", // NEEDS CHECK
+		shortDesc: "Probabile brutto colpo.", // NEEDS CHECK
 	},
 	crosspoison: {
 		name: "Velenocroce",
 		// Official flavor text: "Attacco con zanne avvelenate che può anche avvelenare il Pokémon colpito. Probabile brutto colpo."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Probabilità del 10% di infliggere avvelenamento al bersaglio. Maggiori probabilità di infliggere brutto colpo.", // NEEDS CHECK
+		shortDesc: "10% avvelenamento. Probabile brutto colpo.", // NEEDS CHECK
 	},
 	crunch: {
 		name: "Sgranocchio",
 		// Official flavor text: "Il bersaglio viene morso con denti affilati. Può anche ridurne la Difesa."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 20% di ridurre la Difesa del bersaglio di 1 stadio.", // NEEDS CHECK
+		shortDesc: "20% di ridurre la Dif del bersaglio di 1 stadio.", // NEEDS CHECK
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Possibilità del 20% di ridurre la Difesa Speciale del bersaglio di 1 stadio.", // NEEDS CHECK
+			shortDesc: "20% di ridurre la DSp del bersaglio di 1 stadio.", // NEEDS CHECK
 		},
 	},
 	crushclaw: {
 		name: "Tritartigli",
 		// Official flavor text: "Colpisce il bersaglio con artigli robusti e affilati che possono ridurne la Difesa."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 50% di ridurre la Difesa del bersaglio di 1 stadio.", // NEEDS CHECK
+		shortDesc: "50% di ridurre la Dif del bersaglio di 1 stadio.", // NEEDS CHECK
 	},
 	crushgrip: {
 		name: "Sbriciolmano",
 		// Official flavor text: "Colpisce il bersaglio con grande forza. Più PS ha il Pokémon colpito, maggiore è la potenza della mossa."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "La potenza di questa mossa equivale a 120 x (PS attuali del bersaglio / PS massimi del bersaglio), arrotondato per difetto sul valore intermedio, ma non meno di 1.", // NEEDS CHECK
+		shortDesc: "Potenza proporzionale ai PS del bersaglio.", // NEEDS CHECK
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "La potenza di questa mossa 120 x (PS attuali del bersaglio / PS massimi del bersaglio) + 1, arrotondato per difetto.", // NEEDS CHECK
 		},
 	},
 	curse: {
 		name: "Maledizione",
 		// Official flavor text: "Una mossa che agisce in modo diverso se chi la usa è di tipo Spettro."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Se l'utilizzatore non è un tipo Spettro, riduce la Velocità dell'utilizzatore di 1 stadio e ne aumenta Attacco e Difesa di 1 stadio. Se l'utilizzatore è un tipo Spettro, perde metà dei suoi PS massimi, arrotondati per difetto, anche se ciò lo manda KO; in cambio, il bersaglio perde 1/4 dei suoi PS massimi, arrotondati per difetto, alla fine di ogni turno fintanto che rimane in campo. Se il bersaglio usa Staffetta, il Pokémon che lo sostituisce continuerà a subire questo effetto. Fallisce se il bersaglio non c'è o se è già affetto da Maledizione.", // NEEDS CHECK
+		shortDesc: "Maledizione se Spettro, altrimenti -1 Vel +1 Att / Def", // NEEDS CHECK
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Se l'utilizzatore non è un tipo Spettro, riduce la Velocità dell'utilizzatore di 1 stadio e ne aumenta Attacco e Difesa di 1 stadio. Se l'utilizzatore è un tipo Spettro, perde metà dei suoi PS massimi, arrotondati per difetto, anche se ciò lo manda KO; in cambio, il bersaglio perde 1/4 dei suoi PS massimi, arrotondati per difetto, alla fine di ogni turno fintanto che rimane in campo. Se il bersaglio usa Staffetta, il Pokémon che lo sostituisce continuerà a subire questo effetto. Fallisce se il bersaglio non c'è, se è già affetto da Maledizione o se ha un Sostituto attivo.", // NEEDS CHECK
 		},
 		gen2: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Se l'utilizzatore non è un tipo Spettro, riduce la Velocità dell'utilizzatore di 1 stadio e ne aumenta Attacco e Difesa di 1 stadio, a meno che Attacco e Difesa dell'utilizzatore siano già a 6 stadi. Se l'utilizzatore è un tipo Spettro, perde metà dei suoi PS massimi, arrotondati per difetto, anche se ciò lo manda KO; in cambio, il bersaglio perde 1/4 dei suoi PS massimi, arrotondati per difetto, alla fine di ogni turno fintanto che rimane in campo. Se il bersaglio usa Staffetta, il Pokémon che lo sostituisce continuerà a subire questo effetto. Fallisce se il bersaglio è già affetto da Maledizione o se ha un Sostituto attivo.", // NEEDS CHECK
 		},
 
 		start: "  {SOURCE} riduce i suoi PS per lanciare una maledizione su {POKEMON}!",
@@ -1387,28 +1388,28 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	cut: {
 		name: "Taglio",
-		shortDesc: null, // NEEDS TRANSLATION
+		shortDesc: "Nessun effetto aggiuntivo.", // NEEDS CHECK
 	},
 	darkestlariat: {
 		name: "Braccioteso",
 		// Official flavor text: "Chi la usa attacca il bersaglio mulinando gli arti. Il danno inflitto ignora le modifiche alle statistiche del bersaglio."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Ignora le modifiche alle statistiche del bersaglio, inclusa l'elusione.", // NEEDS CHECK
+		shortDesc: "Ignora le modifiche alle statistiche del bersaglio.", // NEEDS CHECK
 	},
 	darkpulse: {
 		name: "Neropulsar",
 		// Official flavor text: "Chi la usa emana un’aura impregnata di oscuri pensieri. Può anche far tentennare il Pokémon colpito."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Possibilità del 20% di far tentennare il bersaglio.", // NEEDS CHECK
+		shortDesc: "20% di far tentennare il bersaglio.", // NEEDS CHECK
 	},
 	darkvoid: {
 		name: "Vuototetro",
 		// Official flavor text: "Trascina i nemici intorno in un mondo di totale oscurità e li fa addormentare."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Causa addormentamento agli avversari. Questa mossa non può essere usata con successo se l'utilizzatore non è Darkrai, considerando anche Trasformazione.", // NEEDS CHECK
+		shortDesc: "Darkrai: addormenta gli avversari.", // NEEDS CHECK
 		gen6: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Causa addormentamento agli avversari.", // NEEDS CHECK
+			shortDesc: "Addormenta gli avversari.", // NEEDS CHECK
 		},
 
 		fail: "Ma non ne è capace!",
@@ -1417,60 +1418,60 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	dazzlinggleam: {
 		name: "Magibrillio",
 		// Official flavor text: "Chi la usa emette una luce potentissima che infligge danni ai nemici intorno."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Nessun effetto aggiuntivo.", // NEEDS CHECK
+		shortDesc: "Nessun effetto aggiuntivo. Colpisce nemici adiacenti.", // NEEDS CHECK
 	},
 	decorate: {
 		name: "Decorazione",
 		// Official flavor text: "Chi la usa agghinda il bersaglio con delle decorazioni aumentandone di molto l’Attacco e l’Attacco Speciale."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Aumenta Attacco e Attacco Speciale del bersaglio di 2 stadi.", // NEEDS CHECK
+		shortDesc: "Aumenta Att e ASp del bersaglio di 2 stadi.", // NEEDS CHECK
 	},
 	defendorder: {
 		name: "Comandoscudo",
 		// Official flavor text: "Chi la usa raduna i suoi sgherri per creare uno scudo, aumentando Difesa e Difesa Speciale."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Aumenta Difesa e Difesa Speciale dell'utilizzatore di 1 stadio.", // NEEDS CHECK
+		shortDesc: "Aumenta Dif e DSp dell'utilizzatore di 1 stadio.", // NEEDS CHECK
 	},
 	defensecurl: {
 		name: "Ricciolscudo",
 		// Official flavor text: "Chi la usa si raggomitola per nascondere i punti deboli e aumentare la propria Difesa."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Aumenta la Difesa dell'utilizzatore di 1 stadio. Fintanto che l'utilizzatore resta in campo, la potenza di Palla Gelo e Rotolamento dell'utilizzatore viene raddoppiata (effetto non cumulabile).", // NEEDS CHECK
+		shortDesc: "Aumenta la Dif dell'utilizzatore di 1 stadio.", // NEEDS CHECK
 		gen2: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Aumenta la Difesa dell'utilizzatore di 1 stadio. Fintanto che l'utilizzatore resta in campo, la potenza di Rotolamento dell'utilizzatore viene raddoppiata (effetto non cumulabile). Staffetta può passare questo effetto a un alleato.", // NEEDS CHECK
 		},
 		gen1: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Aumenta la Difesa dell'utilizzatore di 1 stadio.", // NEEDS CHECK
 		},
 	},
 	defog: {
 		name: "Scacciabruma",
 		// Official flavor text: "Chi la usa spazza via barriere come Riflesso e Schermoluce con un forte vento e riduce la capacità d’elusione del bersaglio."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Riduce l'elusione del bersaglio di 1 stadio. Se questa mossa ha successo indipendentemente dal calo dell'elusione del bersaglio, gli effetti di Riflesso, Schermoluce, Velaurora, Salvaguardia, Nebbia, Punte, Fielepunte, Levitoroccia e Rete Vischiosa vengono rimossi dal campo del bersaglio, mentre Punte, Fielepunte, Levitoroccia e Rete Vischiosa vengono rimossi dal campo dell'utilizzatore. Questo effetto ignora il Sostituto del bersaglio, anche se Sostituto evita il calo dell'evasione. Se un campo è attivo e questa mossa ha successo, il campo viene rimosso.", // NEEDS CHECK
+		shortDesc: "-1 elusione; rimuove tutte le trappole e campi.", // NEEDS CHECK
 		gen7: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Riduce l'elusione del bersaglio di 1 stadio. Se questa mossa ha successo indipendentemente dal calo dell'elusione del bersaglio, gli effetti di Riflesso, Schermoluce, Velaurora, Salvaguardia, Nebbia, Punte, Fielepunte, Levitoroccia e Rete Vischiosa vengono rimossi dal campo del bersaglio, mentre Punte, Fielepunte, Levitoroccia e Rete Vischiosa vengono rimossi dal campo dell'utilizzatore. Questo effetto ignora il Sostituto del bersaglio, anche se Sostituto evita il calo dell'evasione.", // NEEDS CHECK
+			shortDesc: "-1 elusione; rimuove tutte le trappole.", // NEEDS CHECK
 		},
 		gen6: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Riduce l'elusione del bersaglio di 1 stadio. Se questa mossa ha successo indipendentemente dal calo dell'elusione del bersaglio, gli effetti di Riflesso, Schermoluce, Salvaguardia, Nebbia, Punte, Fielepunte, Levitoroccia e Rete Vischiosa vengono rimossi dal campo del bersaglio, mentre Punte, Fielepunte, Levitoroccia e Rete Vischiosa vengono rimossi dal campo dell'utilizzatore. Questo effetto ignora il Sostituto del bersaglio, anche se Sostituto evita il calo dell'evasione.", // NEEDS CHECK
 		},
 		gen5: {
-			desc: null, // NEEDS TRANSLATION
-			shortDesc: null, // NEEDS TRANSLATION
+			desc: "Riduce l'elusione del bersaglio di 1 stadio. Se questa mossa ha successo indipendentemente dal calo dell'elusione del bersaglio, gli effetti di Riflesso, Schermoluce, Salvaguardia, Nebbia, Punte, Fielepunte, Levitoroccia e Rete Vischiosa vengono rimossi dal campo del bersaglio. Questo effetto ignora il Sostituto del bersaglio, anche se Sostituto evita il calo dell'evasione.", // NEEDS CHECK
+			shortDesc: "-1 evasione; rimuove trappole/schermi dal bersaglio.", // NEEDS CHECK
 		},
 	},
 	destinybond: {
 		name: "Destinobbligato",
 		// Official flavor text: "Se chi la usa va KO a causa di un attacco, chi ha sferrato il colpo da KO fa la stessa fine. Se usata in successione fallisce."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "Se l'attacco di un Pokémon avversario colpisce l'utilizzatore e lo manda KO prima che l'utilizzatore possa usare la sua prossima mossa, anche quell'avversario viene mandato KO, a meno che l'utilizzatore non venga mandato KO con Divinazione o Obbliderio. Fallisce se l'utilizzatore ha usato questa mossa con successo come ultima mossa, escludendo l'effetto di Sincrodanza", // NEEDS CHECK
+		shortDesc: "Se mandato KO, porta con sé chi l'ha colpito.", // NEEDS CHECK
 		gen6: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Se l'attacco di un Pokémon avversario colpisce l'utilizzatore e lo manda KO prima che l'utilizzatore possa usare la sua prossima mossa, anche quell'avversario viene mandato KO, a meno che l'utilizzatore non venga mandato KO con Divinazione o Obbliderio.", // NEEDS CHECK
 		},
 		gen2: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "Se l'attacco di un Pokémon avversario colpisce l'utilizzatore e lo manda KO prima che l'utilizzatore possa usare la sua prossima mossa, anche quell'avversario viene mandato KO", // NEEDS CHECK
 		},
 
 		start: "  {POKEMON} tenta di far subire a chi lo manda KO la sua stessa sorte!",
@@ -1479,28 +1480,28 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	detect: {
 		name: "Individua",
 		// Official flavor text: "Permette di eludere tutti gli attacchi. Se usata in successione può fallire."
-		desc: null, // NEEDS TRANSLATION
-		shortDesc: null, // NEEDS TRANSLATION
+		desc: "L'utilizzatore è protetto dalla maggior parte degli attacchi scagliati da altri Pokémon durante questo turno. Questa mossa ha 1/X probabilità di avere successo, dove X comincia con valore 1 e triplica ogni volta che la mossa viene usata. X ritorna a 1 se la mossa fallisce o l'ultima mossa usata dall'utilizzatore non è stata Agodifesa, Anticipo, Bodyguard, Dynabarriera, Egida Ignea, Fortino, Individua, Protezione, Resistenza, Sbarramento, Scudo Reale, Telatrappola o se è stata una delle mosse menzionate e l'avversario ha rotto la protezione. Fallisce se l'utilizzatore si muove per ultimo durante questo turno.", // NEEDS CHECK
+		shortDesc: "Protegge dalle mosse per questo turno.", // NEEDS CHECK
 		gen8: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore è protetto dalla maggior parte degli attacchi scagliati da altri Pokémon durante questo turno. Questa mossa ha 1/X probabilità di avere successo, dove X comincia con valore 1 e triplica ogni volta che la mossa viene usata. X ritorna a 1 se la mossa fallisce o l'ultima mossa usata dall'utilizzatore non è stata Agodifesa, Anticipo, Bodyguard, Dynabarriera, Fortino, Individua, Protezione, Resistenza, Sbarramento, Scudo Reale o se è stata una delle mosse menzionate e l'avversario ha rotto la protezione. Fallisce se l'utilizzatore si muove per ultimo durante questo turno.", // NEEDS CHECK
 		},
 		gen7: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore è protetto dalla maggior parte degli attacchi scagliati da altri Pokémon durante questo turno. Questa mossa ha 1/X probabilità di avere successo, dove X comincia con valore 1 e triplica ogni volta che la mossa viene usata. X ritorna a 1 se la mossa fallisce o l'ultima mossa usata dall'utilizzatore non è stata Agodifesa, Anticipo, Bodyguard, Fortino, Individua, Protezione, Resistenza, Scudo Reale o se è stata una delle mosse menzionate e l'avversario ha rotto la protezione. Fallisce se l'utilizzatore si muove per ultimo durante questo turno.", // NEEDS CHECK
 		},
 		gen6: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore è protetto dalla maggior parte degli attacchi scagliati da altri Pokémon durante questo turno. Questa mossa ha 1/X probabilità di avere successo, dove X comincia con valore 1 e triplica ogni volta che la mossa viene usata. X ritorna a 1 se la mossa fallisce o l'ultima mossa usata dall'utilizzatore non è stata Agodifesa, Anticipo, Bodyguard, Individua, Protezione, Resistenza, Scudo Reale o se è stata una delle mosse menzionate e l'avversario ha rotto la protezione. Fallisce se l'utilizzatore si muove per ultimo durante questo turno.", // NEEDS CHECK
 		},
 		gen5: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore è protetto dalla maggior parte degli attacchi scagliati da altri Pokémon durante questo turno. Questa mossa ha 1/X probabilità di avere successo, dove X comincia con valore 1 e raddoppia ogni volta che la mossa viene usata. X ritorna a 1 se la mossa fallisce o l'ultima mossa usata dall'utilizzatore non è stata Anticipo, Bodyguard, Individua, Protezione o Resistenza. Fallisce se l'utilizzatore si muove per ultimo durante questo turno.", // NEEDS CHECK
 		},
 		gen4: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore è protetto dalla maggior parte degli attacchi scagliati da altri Pokémon durante questo turno. Questa mossa ha 1/X probabilità di avere successo, dove X comincia con valore 1 e raddoppia ogni volta che la mossa viene usata fino a un massimo di 8. X ritorna a 1 se la mossa fallisce o l'ultima mossa usata dall'utilizzatore non è stata Individua, Protezione o Resistenza. Fallisce se l'utilizzatore si muove per ultimo durante questo turno.", // NEEDS CHECK
 		},
 		gen3: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore è protetto dalla maggior parte degli attacchi scagliati da altri Pokémon durante questo turno. Questa mossa ha X/65536 probabilità di avere successo, dove X comincia con valore 65535 e si dimezza, arrotondando per difetto, ogni volta che la mossa viene usata. Dopo il quarto uso consecutivo, X cala a 118 e continua con valori apparentemente casuali da 0 a 65535 per gli usi successivi. X ritorna a 65535 se la mossa fallisce o l'ultima mossa usata dall'utilizzatore non è stata Individua, Protezione o Resistenza. Fallisce se l'utilizzatore si muove per ultimo durante questo turno.", // NEEDS CHECK
 		},
 		gen2: {
-			desc: null, // NEEDS TRANSLATION
+			desc: "L'utilizzatore è protetto dalla maggior parte degli attacchi scagliati da altri Pokémon durante questo turno. Questa mossa ha X/255 probabilità di avere successo, dove X comincia con valore 255 e si dimezza, arrotondando per difetto, ogni volta che la mossa viene usata. X ritorna a 255 se la mossa fallisce o l'ultima mossa usata dall'utilizzatore non è stata Individua, Protezione o Resistenza. Fallisce se l'utilizzatore si muove per ultimo durante questo turno.", // NEEDS CHECK
 		},
 	},
 	devastatingdrake: {
